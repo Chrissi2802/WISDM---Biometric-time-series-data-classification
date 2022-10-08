@@ -1,0 +1,137 @@
+CNN_NET_V2(
+  (net): Sequential(
+    (0): Conv2d(1, 16, kernel_size=(2, 2), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Dropout(p=0.2, inplace=False)
+    (4): Conv2d(16, 32, kernel_size=(2, 2), stride=(1, 1), padding=(1, 1))
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (7): Dropout(p=0.2, inplace=False)
+    (8): Flatten(start_dim=1, end_dim=-1)
+  )
+  (net2): Sequential(
+    (0): Linear(in_features=1024, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.2, inplace=False)
+    (3): Linear(in_features=128, out_features=6, bias=True)
+  )
+)
+Parameters of the model: 134134
+Epoch 001 - Training loss: 0.978 - Training accuracy: 56.40% - Learning rate: 0.1
+Epoch 002 - Training loss: 0.676 - Training accuracy: 70.01% - Learning rate: 0.1
+Epoch 003 - Training loss: 0.591 - Training accuracy: 74.70% - Learning rate: 0.1
+Epoch 004 - Training loss: 0.533 - Training accuracy: 77.51% - Learning rate: 0.1
+Epoch 005 - Training loss: 0.503 - Training accuracy: 79.28% - Learning rate: 0.1
+Epoch 006 - Training loss: 0.470 - Training accuracy: 80.73% - Learning rate: 0.1
+Epoch 007 - Training loss: 0.441 - Training accuracy: 81.88% - Learning rate: 0.1
+Epoch 008 - Training loss: 0.406 - Training accuracy: 84.07% - Learning rate: 0.1
+Epoch 009 - Training loss: 0.388 - Training accuracy: 84.57% - Learning rate: 0.1
+Epoch 010 - Training loss: 0.366 - Training accuracy: 85.57% - Learning rate: 0.1
+Epoch 011 - Training loss: 0.350 - Training accuracy: 86.86% - Learning rate: 0.1
+Epoch 012 - Training loss: 0.322 - Training accuracy: 87.33% - Learning rate: 0.1
+Epoch 013 - Training loss: 0.313 - Training accuracy: 87.66% - Learning rate: 0.1
+Epoch 014 - Training loss: 0.290 - Training accuracy: 89.00% - Learning rate: 0.1
+Epoch 015 - Training loss: 0.277 - Training accuracy: 89.67% - Learning rate: 0.1
+Epoch 016 - Training loss: 0.268 - Training accuracy: 89.65% - Learning rate: 0.1
+Epoch 017 - Training loss: 0.249 - Training accuracy: 90.56% - Learning rate: 0.1
+Epoch 018 - Training loss: 0.240 - Training accuracy: 91.16% - Learning rate: 0.1
+Epoch 019 - Training loss: 0.246 - Training accuracy: 90.47% - Learning rate: 0.1
+Epoch 020 - Training loss: 0.226 - Training accuracy: 91.34% - Learning rate: 0.1
+Epoch 021 - Training loss: 0.219 - Training accuracy: 91.44% - Learning rate: 0.1
+Epoch 022 - Training loss: 0.206 - Training accuracy: 91.75% - Learning rate: 0.1
+Epoch 023 - Training loss: 0.198 - Training accuracy: 92.37% - Learning rate: 0.1
+Epoch 024 - Training loss: 0.190 - Training accuracy: 92.95% - Learning rate: 0.1
+Epoch 025 - Training loss: 0.194 - Training accuracy: 92.75% - Learning rate: 0.1
+Epoch 026 - Training loss: 0.183 - Training accuracy: 93.24% - Learning rate: 0.1
+Epoch 027 - Training loss: 0.175 - Training accuracy: 93.75% - Learning rate: 0.1
+Epoch 028 - Training loss: 0.175 - Training accuracy: 93.42% - Learning rate: 0.1
+Epoch 029 - Training loss: 0.179 - Training accuracy: 93.58% - Learning rate: 0.1
+Epoch 030 - Training loss: 0.169 - Training accuracy: 93.80% - Learning rate: 0.1
+Epoch 031 - Training loss: 0.164 - Training accuracy: 93.91% - Learning rate: 0.1
+Epoch 032 - Training loss: 0.155 - Training accuracy: 93.94% - Learning rate: 0.1
+Epoch 033 - Training loss: 0.158 - Training accuracy: 94.54% - Learning rate: 0.1
+Epoch 034 - Training loss: 0.148 - Training accuracy: 94.79% - Learning rate: 0.1
+Epoch 035 - Training loss: 0.147 - Training accuracy: 94.44% - Learning rate: 0.1
+Epoch 036 - Training loss: 0.139 - Training accuracy: 94.71% - Learning rate: 0.1
+Epoch 037 - Training loss: 0.143 - Training accuracy: 94.94% - Learning rate: 0.1
+Epoch 038 - Training loss: 0.130 - Training accuracy: 95.20% - Learning rate: 0.1
+Epoch 039 - Training loss: 0.133 - Training accuracy: 95.16% - Learning rate: 0.1
+Epoch 040 - Training loss: 0.131 - Training accuracy: 95.05% - Learning rate: 0.1
+Epoch 041 - Training loss: 0.136 - Training accuracy: 95.01% - Learning rate: 0.1
+Epoch 042 - Training loss: 0.099 - Training accuracy: 96.56% - Learning rate: 0.05
+Epoch 043 - Training loss: 0.088 - Training accuracy: 96.90% - Learning rate: 0.05
+Epoch 044 - Training loss: 0.088 - Training accuracy: 97.01% - Learning rate: 0.05
+Epoch 045 - Training loss: 0.091 - Training accuracy: 96.79% - Learning rate: 0.05
+Epoch 046 - Training loss: 0.089 - Training accuracy: 96.89% - Learning rate: 0.05
+Epoch 047 - Training loss: 0.075 - Training accuracy: 97.24% - Learning rate: 0.025
+Epoch 048 - Training loss: 0.073 - Training accuracy: 97.40% - Learning rate: 0.025
+Epoch 049 - Training loss: 0.071 - Training accuracy: 97.51% - Learning rate: 0.025
+Epoch 050 - Training loss: 0.066 - Training accuracy: 97.70% - Learning rate: 0.025
+Epoch 051 - Training loss: 0.069 - Training accuracy: 97.76% - Learning rate: 0.025
+Epoch 052 - Training loss: 0.072 - Training accuracy: 97.46% - Learning rate: 0.025
+Epoch 053 - Training loss: 0.062 - Training accuracy: 97.67% - Learning rate: 0.025
+Epoch 054 - Training loss: 0.065 - Training accuracy: 97.80% - Learning rate: 0.025
+Epoch 055 - Training loss: 0.066 - Training accuracy: 97.74% - Learning rate: 0.025
+Epoch 056 - Training loss: 0.061 - Training accuracy: 97.77% - Learning rate: 0.025
+Epoch 057 - Training loss: 0.062 - Training accuracy: 97.83% - Learning rate: 0.025
+Epoch 058 - Training loss: 0.062 - Training accuracy: 97.76% - Learning rate: 0.025
+Epoch 059 - Training loss: 0.061 - Training accuracy: 97.91% - Learning rate: 0.025
+Epoch 060 - Training loss: 0.059 - Training accuracy: 97.96% - Learning rate: 0.0125
+Epoch 061 - Training loss: 0.054 - Training accuracy: 97.98% - Learning rate: 0.0125
+Epoch 062 - Training loss: 0.057 - Training accuracy: 98.01% - Learning rate: 0.0125
+Epoch 063 - Training loss: 0.058 - Training accuracy: 98.07% - Learning rate: 0.0125
+Epoch 064 - Training loss: 0.058 - Training accuracy: 97.92% - Learning rate: 0.0125
+Epoch 065 - Training loss: 0.054 - Training accuracy: 98.16% - Learning rate: 0.00625
+Epoch 066 - Training loss: 0.052 - Training accuracy: 98.31% - Learning rate: 0.00625
+Epoch 067 - Training loss: 0.055 - Training accuracy: 98.11% - Learning rate: 0.00625
+Epoch 068 - Training loss: 0.055 - Training accuracy: 98.06% - Learning rate: 0.00625
+Epoch 069 - Training loss: 0.054 - Training accuracy: 98.21% - Learning rate: 0.00625
+Epoch 070 - Training loss: 0.052 - Training accuracy: 98.26% - Learning rate: 0.003125
+Epoch 071 - Training loss: 0.056 - Training accuracy: 98.06% - Learning rate: 0.003125
+Epoch 072 - Training loss: 0.053 - Training accuracy: 98.09% - Learning rate: 0.003125
+Epoch 073 - Training loss: 0.051 - Training accuracy: 98.26% - Learning rate: 0.003125
+Epoch 074 - Training loss: 0.054 - Training accuracy: 98.07% - Learning rate: 0.003125
+Epoch 075 - Training loss: 0.054 - Training accuracy: 98.13% - Learning rate: 0.003125
+Epoch 076 - Training loss: 0.050 - Training accuracy: 98.19% - Learning rate: 0.003125
+Epoch 077 - Training loss: 0.055 - Training accuracy: 97.86% - Learning rate: 0.003125
+Epoch 078 - Training loss: 0.051 - Training accuracy: 98.20% - Learning rate: 0.003125
+Epoch 079 - Training loss: 0.052 - Training accuracy: 98.35% - Learning rate: 0.003125
+Epoch 080 - Training loss: 0.050 - Training accuracy: 98.19% - Learning rate: 0.0015625
+Epoch 081 - Training loss: 0.051 - Training accuracy: 98.17% - Learning rate: 0.0015625
+Epoch 082 - Training loss: 0.051 - Training accuracy: 98.29% - Learning rate: 0.0015625
+Epoch 083 - Training loss: 0.050 - Training accuracy: 98.26% - Learning rate: 0.00078125
+Epoch 084 - Training loss: 0.053 - Training accuracy: 98.26% - Learning rate: 0.00078125
+Epoch 085 - Training loss: 0.051 - Training accuracy: 98.17% - Learning rate: 0.00078125
+Epoch 086 - Training loss: 0.051 - Training accuracy: 98.38% - Learning rate: 0.00078125
+Epoch 087 - Training loss: 0.051 - Training accuracy: 98.23% - Learning rate: 0.000390625
+Epoch 088 - Training loss: 0.054 - Training accuracy: 98.18% - Learning rate: 0.000390625
+Epoch 089 - Training loss: 0.050 - Training accuracy: 98.38% - Learning rate: 0.000390625
+Epoch 090 - Training loss: 0.050 - Training accuracy: 98.16% - Learning rate: 0.0001953125
+Epoch 091 - Training loss: 0.052 - Training accuracy: 98.15% - Learning rate: 0.0001953125
+Epoch 092 - Training loss: 0.052 - Training accuracy: 98.05% - Learning rate: 0.0001953125
+Epoch 093 - Training loss: 0.053 - Training accuracy: 98.13% - Learning rate: 9.765625e-05
+Epoch 094 - Training loss: 0.053 - Training accuracy: 98.16% - Learning rate: 9.765625e-05
+Epoch 095 - Training loss: 0.054 - Training accuracy: 98.10% - Learning rate: 9.765625e-05
+Epoch 096 - Training loss: 0.049 - Training accuracy: 98.22% - Learning rate: 4.8828125e-05
+Epoch 097 - Training loss: 0.052 - Training accuracy: 98.21% - Learning rate: 4.8828125e-05
+Epoch 098 - Training loss: 0.050 - Training accuracy: 98.23% - Learning rate: 4.8828125e-05
+Epoch 099 - Training loss: 0.054 - Training accuracy: 98.20% - Learning rate: 4.8828125e-05
+Epoch 100 - Training loss: 0.052 - Training accuracy: 98.31% - Learning rate: 2.44140625e-05
+Epoch 101 - Training loss: 0.051 - Training accuracy: 98.25% - Learning rate: 2.44140625e-05
+Epoch 102 - Training loss: 0.055 - Training accuracy: 98.06% - Learning rate: 2.44140625e-05
+Epoch 103 - Training loss: 0.051 - Training accuracy: 98.23% - Learning rate: 1.220703125e-05
+Epoch 104 - Training loss: 0.052 - Training accuracy: 98.26% - Learning rate: 1.220703125e-05
+Epoch 105 - Training loss: 0.051 - Training accuracy: 98.26% - Learning rate: 1.220703125e-05
+Epoch 106 - Training loss: 0.049 - Training accuracy: 98.34% - Learning rate: 6.103515625e-06
+Epoch 107 - Training loss: 0.053 - Training accuracy: 98.22% - Learning rate: 6.103515625e-06
+Epoch 108 - Training loss: 0.049 - Training accuracy: 98.21% - Learning rate: 6.103515625e-06
+Epoch 109 - Training loss: 0.051 - Training accuracy: 98.17% - Learning rate: 6.103515625e-06
+Epoch 110 - Training loss: 0.051 - Training accuracy: 98.27% - Learning rate: 3.0517578125e-06
+Epoch 111 - Training loss: 0.052 - Training accuracy: 98.22% - Learning rate: 3.0517578125e-06
+Epoch 112 - Training loss: 0.049 - Training accuracy: 98.46% - Learning rate: 3.0517578125e-06
+Epoch 113 - Training loss: 0.050 - Training accuracy: 98.30% - Learning rate: 1.52587890625e-06
+Epoch 114 - Training loss: 0.052 - Training accuracy: 98.17% - Learning rate: 1.52587890625e-06
+Epoch 115 - Training loss: 0.052 - Training accuracy: 98.23% - Learning rate: 1.52587890625e-06
+
+Program runtime: 0:01:28

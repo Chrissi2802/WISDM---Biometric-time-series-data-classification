@@ -174,13 +174,13 @@ class WISDM_Dataset():
         # step_size; integer
         # Output:
 
-        boundary = int(np.floor((len(data) - window_size) / step_size))
         output = []
 
-        for i in range(boundary):
-            lower = int(i * step_size)
-            upper = lower + window_size
-            local_data = data[lower:upper]
+        for i in range(0, data.shape[0] - window_size, step_size):
+            
+            local_data = data[i: i + window_size]
+            local_data = torch.unsqueeze(local_data, 0)
+            #print(local_data.shape)
 
             if (output != []):
                 output = torch.cat((output, local_data))
@@ -209,8 +209,7 @@ class Create_Dataset(Dataset):
         for i in range(0, len(X) - time_length + 1, sliding_step):
 
             if (Y.values[i].all() == Y.values[i + time_length - 1].all()):
-                data.append(torch.from_numpy(X.values[i : i + time_length]))
-
+                data.append(torch.from_numpy(X.values[i : i + time_length].astype(np.float)).float())
                 if ('labels' in Y):
                     labels.append(Y['labels'].values[i])
                 else:

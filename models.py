@@ -146,12 +146,12 @@ class CNN_NET_V2(nn.Module):
                                  nn.Dropout(dropout),
                                  nn.Flatten())
     
-        x = self.net(torch.rand(1, 1, height, width))
+        xs = self.net(torch.rand(1, 1, height, width))
         
-        self.net.append(nn.Linear(x.shape[1], 128))
-        self.net.append(nn.ReLU())
-        self.net.append(nn.Dropout(dropout))
-        self.net.append(nn.Linear(128, 6))
+        self.net2 = nn.Sequential(nn.Linear(xs.shape[1], 128),
+                                  nn.ReLU(),
+                                  nn.Dropout(dropout),
+                                  nn.Linear(128, 6))
 
     def forward(self, input_data):
         """The layers are stacked to transport the data through the neural network for the forward part."""
@@ -161,6 +161,7 @@ class CNN_NET_V2(nn.Module):
         # x; torch.Tensor
 
         x = self.net(input_data)
+        x = self.net2(x)
 
         return x
 
@@ -218,8 +219,8 @@ class GRU_NET(nn.Module):
         self.output_size = output_size
         
         self.gru = nn.GRU(self.input_size, self.hidden_size, self.num_layers, batch_first = True)
-        self.tanh = nn.Tanh()
-        self.linout = nn.Linear(self.hidden_size, self.output_size, bias = True)
+        self.net = nn.Sequential(nn.Flatten(),
+                                 nn.Linear(self.hidden_size, self.output_size, bias = True))
 
     def forward(self, input_data):
         """The layers are stacked to transport the data through the neural network for the forward part."""
@@ -230,8 +231,7 @@ class GRU_NET(nn.Module):
         # h; torch.Tensor
 
         x, h = self.gru(input_data)
-        x = self.tanh(x)
-        x = self.linout(x)
+        x = self.net(x)
 
         return x
 

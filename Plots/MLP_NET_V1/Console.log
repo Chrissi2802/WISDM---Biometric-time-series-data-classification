@@ -1,0 +1,71 @@
+Prepare the data for training ...
+Preparation of the data completed!
+Start of training ...
+Epoch: 001/050 Training loss: 1.611 Training Accuracy: 41.613
+Epoch: 002/050 Training loss: 1.588 Training Accuracy: 43.894
+Epoch: 003/050 Training loss: 1.584 Training Accuracy: 44.243
+Epoch: 004/050 Training loss: 1.582 Training Accuracy: 44.450
+Epoch: 005/050 Training loss: 1.581 Training Accuracy: 44.506
+Epoch: 006/050 Training loss: 1.580 Training Accuracy: 44.590
+Epoch: 007/050 Training loss: 1.579 Training Accuracy: 44.667
+Epoch: 008/050 Training loss: 1.579 Training Accuracy: 44.732
+Epoch: 009/050 Training loss: 1.579 Training Accuracy: 44.711
+Epoch: 010/050 Training loss: 1.579 Training Accuracy: 44.735
+Epoch: 011/050 Training loss: 1.578 Training Accuracy: 44.780
+Epoch: 012/050 Training loss: 1.578 Training Accuracy: 44.782
+Epoch: 013/050 Training loss: 1.578 Training Accuracy: 44.769
+Epoch: 014/050 Training loss: 1.578 Training Accuracy: 44.806
+Epoch: 015/050 Training loss: 1.578 Training Accuracy: 44.861
+Epoch: 016/050 Training loss: 1.577 Training Accuracy: 44.907
+Epoch: 017/050 Training loss: 1.577 Training Accuracy: 44.958
+Epoch: 018/050 Training loss: 1.577 Training Accuracy: 44.854
+Epoch: 019/050 Training loss: 1.577 Training Accuracy: 44.906
+Epoch: 020/050 Training loss: 1.576 Training Accuracy: 44.967
+Epoch: 021/050 Training loss: 1.577 Training Accuracy: 44.929
+Epoch: 022/050 Training loss: 1.577 Training Accuracy: 44.928
+Epoch: 023/050 Training loss: 1.576 Training Accuracy: 44.999
+Epoch: 024/050 Training loss: 1.577 Training Accuracy: 44.941
+Epoch: 025/050 Training loss: 1.576 Training Accuracy: 44.982
+Epoch: 026/050 Training loss: 1.576 Training Accuracy: 44.984
+Epoch: 027/050 Training loss: 1.577 Training Accuracy: 44.923
+Epoch: 028/050 Training loss: 1.576 Training Accuracy: 45.013
+Epoch: 029/050 Training loss: 1.576 Training Accuracy: 45.011
+Epoch: 030/050 Training loss: 1.576 Training Accuracy: 44.975
+Epoch: 031/050 Training loss: 1.576 Training Accuracy: 45.008
+Epoch: 032/050 Training loss: 1.576 Training Accuracy: 45.022
+Epoch: 033/050 Training loss: 1.576 Training Accuracy: 45.027
+Epoch: 034/050 Training loss: 1.576 Training Accuracy: 45.054
+Epoch: 035/050 Training loss: 1.576 Training Accuracy: 45.017
+Epoch: 036/050 Training loss: 1.576 Training Accuracy: 45.022
+Epoch: 037/050 Training loss: 1.577 Training Accuracy: 44.945
+Epoch: 038/050 Training loss: 1.576 Training Accuracy: 45.052
+Epoch: 039/050 Training loss: 1.576 Training Accuracy: 45.080
+Epoch: 040/050 Training loss: 1.576 Training Accuracy: 45.035
+Epoch: 041/050 Training loss: 1.576 Training Accuracy: 45.081
+Epoch: 042/050 Training loss: 1.576 Training Accuracy: 45.052
+Epoch: 043/050 Training loss: 1.576 Training Accuracy: 45.024
+Epoch: 044/050 Training loss: 1.576 Training Accuracy: 45.020
+Epoch: 045/050 Training loss: 1.576 Training Accuracy: 45.031
+Epoch: 046/050 Training loss: 1.576 Training Accuracy: 44.996
+Epoch: 047/050 Training loss: 1.576 Training Accuracy: 45.035
+Epoch: 048/050 Training loss: 1.576 Training Accuracy: 45.075
+Epoch: 049/050 Training loss: 1.575 Training Accuracy: 45.046
+Epoch: 050/050 Training loss: 1.576 Training Accuracy: 45.065
+Training completed!
+MLP_NET_V1(
+  (relu): ReLU()
+  (dropout): Dropout(p=0.5, inplace=False)
+  (softmax): Softmax(dim=1)
+  (bnin): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (bnbout): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (linin): Linear(in_features=3, out_features=16, bias=True)
+  (linbout): Linear(in_features=16, out_features=32, bias=True)
+  (linout): Linear(in_features=32, out_features=6, bias=True)
+)
+Parameters of the model: 902
+Prepare the data for validation ...
+Preparation of the data completed!
+Start of validation ...
+Validation completed!
+
+Program runtime: 0:05:22

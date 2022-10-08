@@ -13,9 +13,8 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 import pandas as pd
 import matplotlib.pyplot as plt
-import datasets
-import models
-import helpers
+
+import datasets, models, helpers
 
 
 #------------------------------------------------------------------------------------------------------------------#
@@ -48,7 +47,7 @@ def train_mlp_cnnv1_gru(model, epochs, batch_size, learning_rate, cuda, plots):
     dl_train = dataset_train.dataloading(batch_size, True, True, sliding_window = sw)
     print("Preparation of the data completed!")
 
-    if (plots == True):
+    if ((plots == True) and (sw == False)):
         dataset_train.visualisation()
 
     train_losses = []
@@ -175,7 +174,7 @@ def testdifhyperparameter():
         for ba in batch_size:           # different batch sizes
             for lr in learning_rate:    # different learning rates
                 print("Model:", base_model.__class__.__name__, " |  Optimizer: Adam  |  Batch size:", ba, " |  Learning rate:", lr)
-                model, losses = wisdm_train(base_model, 50, ba, lr, True, True)
+                model, losses = train_mlp_cnnv1_gru(base_model, 50, ba, lr, True, True)
                 print(model)
                 evaluation(model)
                 print()
@@ -185,7 +184,7 @@ def run_train_mlp_cnnv1_gru():
     """This function performs the training and validation for the MLPm CNN V1 and GRU."""
     # The model, hyperparameters and other settings can be changed directly in this function.
 
-    epochs = 2              # number of epochs
+    epochs = 50             # number of epochs
     batch_size = 256        # training batch size
     learning_rate = 0.001   # learning rate
     cuda = True             # true or false to train the model on cuda or not
@@ -202,7 +201,7 @@ def run_train_mlp_cnnv1_gru():
     # only for testing
     #print(train_losses)
     print("Parameters of the model:", helpers.count_parameters_of_model(model))  
-    #torch.save(model, "model.pth")
+    torch.save(model, "model.pth")
     #model = torch.load("model.pth")
     #testdifhyperparameter()
 
@@ -346,7 +345,7 @@ def run_train_cnnv2_lstm():
     # define time_length, sliding_step and batch_size
     time_length = 128
     sliding_step = 64
-    batch_size = 32 #30
+    batch_size = 32
     dataset = datasets.Create_Dataset(normalized_data[['x', 'y', 'z']], normalized_data[['subjects','labels']], time_length, sliding_step)
     dl_train = DataLoader(dataset, batch_size, shuffle=True)
 
@@ -355,12 +354,14 @@ def run_train_cnnv2_lstm():
     print("Parameters of the model:", helpers.count_parameters_of_model(rnn_model))  
 
     rnn_model = train_cnnv2_lstm(rnn_model, dl_train, model_type='RNN', learning_rate = 0.1)
+    torch.save(rnn_model, "rnn_model.pth")
 
-    cnn_model = models.CNN_NET_V2(height = time_length, width = 3)
-    print(cnn_model)
-    print("Parameters of the model:", helpers.count_parameters_of_model(cnn_model))  
+    #cnn_model = models.CNN_NET_V2(height = time_length, width = 3)
+    #print(cnn_model)
+    #print("Parameters of the model:", helpers.count_parameters_of_model(cnn_model))  
 
     #cnn_model = train_cnnv2_lstm(cnn_model, dl_train, model_type='CNN', learning_rate = 0.1)
+    #torch.save(cnn_model, "cnn_model.pth")
 
     # testing
     ouput(rnn_model, time_length, batch_size, inverse_mapping_labels, model_type = "RNN")
@@ -373,7 +374,7 @@ if (__name__ == "__main__"):
     
     run_train_mlp_cnnv1_gru()
 
-    run_train_cnnv2_lstm()
+    #run_train_cnnv2_lstm()
 
     Pr.finish()
     
