@@ -10,9 +10,12 @@
 
 import matplotlib.pyplot as plt
 from datetime import datetime
+import tensorflow as tf
+from sklearn.metrics import confusion_matrix
+from mlxtend.plotting import plot_confusion_matrix
 
 
-def plot_loss_and_acc(epochs, train_losses, train_acc, test_losses = [], test_acc = []):
+def plot_loss_and_acc(epochs, train_losses, train_acc, test_losses = [], test_acc = [], fold = -1):
     """This function plots the loss and accuracy for training and, if available, for validation."""
     # Input:
     # epochs; integer, Number of epochs
@@ -20,6 +23,7 @@ def plot_loss_and_acc(epochs, train_losses, train_acc, test_losses = [], test_ac
     # train_acc; list, Accuracy during training for each epoch
     # test_losses; list default [], Loss during validation for each epoch
     # test_acc; list default [], Accuracy during validation for each epoch
+    # fold; integer default -1, Cross-validation run
 
     fig, ax1 = plt.subplots()
     xaxis = list(range(1, epochs + 1))
@@ -49,13 +53,21 @@ def plot_loss_and_acc(epochs, train_losses, train_acc, test_losses = [], test_ac
 
     labs = [l.get_label() for l in lns]
     ax1.legend(lns, labs)
-    plt.title("Loss and Accuracy")
-    fig.savefig("Loss_and_Accuracy.png")
+
+    if (fold == -1):
+        fold1 = ""
+        fold2 = ""
+    else:
+        fold1 = " Fold " + str(fold)
+        fold2 = "_Fold_" + str(fold)
+        
+    plt.title("Loss and Accuracy" + fold1)
+    fig.savefig("Loss_and_Accuracy" + fold2 + ".png")
     plt.show()
 
 
 def count_parameters_of_model(model):
-    """This function counts all parameters of a passed model."""
+    """This function counts all parameters of a passed PyTorch model."""
     # Input:
     # model; the pytorch model
     # Output:
@@ -104,6 +116,53 @@ class Program_runtime():
         print()
 
 
+def hardware_config(device = "GPU"):
+    """This function configures the hardware."""
+    # Input:
+    # device; string default GPU, which device to use, TPU or GPU
+    # Output:
+    # strategy; tensorflow MirroredStrategy
+
+    if (device == "TPU"):
+        # TPU, use only if TPU is available
+        tpu = tf.distribute.cluster_resolver.TPUClusterResolver()
+        tf.config.experimental_connect_to_cluster(tpu)
+        tf.tpu.experimental.initialize_tpu_system(tpu)
+        strategy = tf.distribute.TPUStrategy(tpu)
+    else:
+        # GPU, if not available, CPU is automatically selected
+        gpus = tf.config.list_logical_devices("GPU")
+        strategy = tf.distribute.MirroredStrategy(gpus)
+
+    return strategy
+
+
+def plot_conf_matrix(valid_predictions, y_valid, acitvity_names, fold):
+    """This function plots the confusion matrix for the validation data."""
+    # Input:
+    # valid_predictions; NumPy array, Array of predictions
+    # y_valid; NumPy array, Array of the true labels
+    # acitvity_names; list, list of activity names
+    # fold; integer, Cross-validation run
+
+    conf_matrix = confusion_matrix(y_valid, valid_predictions)
+    plot_confusion_matrix(conf_mat = conf_matrix, class_names = acitvity_names, show_normed = True, figsize = (10, 7), colorbar = True)
+    plt.title("Confusion matrix Fold " + str(fold))
+    plt.savefig("Confusion_matrix_Fold_" + str(fold) + ".png")   
+    plt.show()
+
+
 if (__name__ == "__main__"):
-    pass
+    
+    # calculating the programme runtime
+    Pr = Program_runtime()
+    # Code here
+    Pr.finish(print = True)
+
+    # configures the hardware
+    strategy = hardware_config("GPU")
+
+    with strategy.scope():
+        pass
+        # Code here
     

@@ -1,0 +1,2855 @@
+Prepare the dataset for training and testing ...
+Preparation of the data completed!
+Fold: 0
+Model: "MLP_NET_TF"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 100, 3)]          0         
+_________________________________________________________________
+flatten (Flatten)            (None, 300)               0         
+_________________________________________________________________
+dense (Dense)                (None, 256)               77056     
+_________________________________________________________________
+batch_normalization (BatchNo (None, 256)               1024      
+_________________________________________________________________
+dropout (Dropout)            (None, 256)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 128)               32896     
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 128)               512       
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 6)                 774       
+=================================================================
+Total params: 112,262
+Trainable params: 111,494
+Non-trainable params: 768
+_________________________________________________________________
+None
+Epoch 1/500
+47/47 - 6s - loss: 1.7025 - accuracy: 0.4318 - val_loss: 1.5469 - val_accuracy: 0.4667
+
+Epoch 00001: val_loss improved from inf to 1.54691, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 2/500
+47/47 - 1s - loss: 1.2362 - accuracy: 0.5376 - val_loss: 1.2881 - val_accuracy: 0.5504
+
+Epoch 00002: val_loss improved from 1.54691 to 1.28807, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 3/500
+47/47 - 1s - loss: 1.1113 - accuracy: 0.5723 - val_loss: 1.0857 - val_accuracy: 0.6038
+
+Epoch 00003: val_loss improved from 1.28807 to 1.08568, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 4/500
+47/47 - 1s - loss: 1.0334 - accuracy: 0.5915 - val_loss: 0.9997 - val_accuracy: 0.6361
+
+Epoch 00004: val_loss improved from 1.08568 to 0.99968, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 5/500
+47/47 - 1s - loss: 0.9717 - accuracy: 0.6069 - val_loss: 0.9393 - val_accuracy: 0.6384
+
+Epoch 00005: val_loss improved from 0.99968 to 0.93931, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 6/500
+47/47 - 1s - loss: 0.9234 - accuracy: 0.6229 - val_loss: 0.8761 - val_accuracy: 0.6465
+
+Epoch 00006: val_loss improved from 0.93931 to 0.87614, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 7/500
+47/47 - 1s - loss: 0.8799 - accuracy: 0.6419 - val_loss: 0.8659 - val_accuracy: 0.6364
+
+Epoch 00007: val_loss improved from 0.87614 to 0.86586, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 8/500
+47/47 - 1s - loss: 0.8549 - accuracy: 0.6508 - val_loss: 0.8452 - val_accuracy: 0.6562
+
+Epoch 00008: val_loss improved from 0.86586 to 0.84522, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 9/500
+47/47 - 1s - loss: 0.8346 - accuracy: 0.6586 - val_loss: 0.8296 - val_accuracy: 0.6636
+
+Epoch 00009: val_loss improved from 0.84522 to 0.82963, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 10/500
+47/47 - 1s - loss: 0.8007 - accuracy: 0.6678 - val_loss: 0.8278 - val_accuracy: 0.6599
+
+Epoch 00010: val_loss improved from 0.82963 to 0.82782, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 11/500
+47/47 - 1s - loss: 0.8002 - accuracy: 0.6685 - val_loss: 0.8380 - val_accuracy: 0.6559
+
+Epoch 00011: val_loss did not improve from 0.82782
+Epoch 12/500
+47/47 - 1s - loss: 0.7687 - accuracy: 0.6874 - val_loss: 0.8126 - val_accuracy: 0.6663
+
+Epoch 00012: val_loss improved from 0.82782 to 0.81261, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 13/500
+47/47 - 1s - loss: 0.7586 - accuracy: 0.6918 - val_loss: 0.8206 - val_accuracy: 0.6694
+
+Epoch 00013: val_loss did not improve from 0.81261
+Epoch 14/500
+47/47 - 1s - loss: 0.7312 - accuracy: 0.7016 - val_loss: 0.8104 - val_accuracy: 0.6714
+
+Epoch 00014: val_loss improved from 0.81261 to 0.81036, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 15/500
+47/47 - 1s - loss: 0.7331 - accuracy: 0.6985 - val_loss: 0.8019 - val_accuracy: 0.6751
+
+Epoch 00015: val_loss improved from 0.81036 to 0.80188, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 16/500
+47/47 - 1s - loss: 0.7230 - accuracy: 0.7075 - val_loss: 0.7991 - val_accuracy: 0.6862
+
+Epoch 00016: val_loss improved from 0.80188 to 0.79914, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 17/500
+47/47 - 1s - loss: 0.7014 - accuracy: 0.7169 - val_loss: 0.8182 - val_accuracy: 0.6788
+
+Epoch 00017: val_loss did not improve from 0.79914
+Epoch 18/500
+47/47 - 1s - loss: 0.6720 - accuracy: 0.7305 - val_loss: 0.8009 - val_accuracy: 0.6791
+
+Epoch 00018: val_loss did not improve from 0.79914
+Epoch 19/500
+47/47 - 1s - loss: 0.6703 - accuracy: 0.7295 - val_loss: 0.7729 - val_accuracy: 0.6862
+
+Epoch 00019: val_loss improved from 0.79914 to 0.77290, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 20/500
+47/47 - 1s - loss: 0.6545 - accuracy: 0.7354 - val_loss: 0.7615 - val_accuracy: 0.6983
+
+Epoch 00020: val_loss improved from 0.77290 to 0.76149, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 21/500
+47/47 - 1s - loss: 0.6475 - accuracy: 0.7391 - val_loss: 0.7760 - val_accuracy: 0.6966
+
+Epoch 00021: val_loss did not improve from 0.76149
+Epoch 22/500
+47/47 - 1s - loss: 0.6389 - accuracy: 0.7405 - val_loss: 0.7730 - val_accuracy: 0.6872
+
+Epoch 00022: val_loss did not improve from 0.76149
+Epoch 23/500
+47/47 - 1s - loss: 0.6357 - accuracy: 0.7477 - val_loss: 0.7674 - val_accuracy: 0.6979
+
+Epoch 00023: val_loss did not improve from 0.76149
+Epoch 24/500
+47/47 - 1s - loss: 0.6118 - accuracy: 0.7576 - val_loss: 0.7546 - val_accuracy: 0.7030
+
+Epoch 00024: val_loss improved from 0.76149 to 0.75461, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 25/500
+47/47 - 1s - loss: 0.6079 - accuracy: 0.7573 - val_loss: 0.7550 - val_accuracy: 0.7093
+
+Epoch 00025: val_loss did not improve from 0.75461
+Epoch 26/500
+47/47 - 1s - loss: 0.5924 - accuracy: 0.7633 - val_loss: 0.7446 - val_accuracy: 0.7050
+
+Epoch 00026: val_loss improved from 0.75461 to 0.74457, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 27/500
+47/47 - 1s - loss: 0.5934 - accuracy: 0.7657 - val_loss: 0.7494 - val_accuracy: 0.7063
+
+Epoch 00027: val_loss did not improve from 0.74457
+Epoch 28/500
+47/47 - 1s - loss: 0.5806 - accuracy: 0.7728 - val_loss: 0.7544 - val_accuracy: 0.7120
+
+Epoch 00028: val_loss did not improve from 0.74457
+Epoch 29/500
+47/47 - 1s - loss: 0.5752 - accuracy: 0.7731 - val_loss: 0.7725 - val_accuracy: 0.6966
+
+Epoch 00029: val_loss did not improve from 0.74457
+Epoch 30/500
+47/47 - 1s - loss: 0.5490 - accuracy: 0.7847 - val_loss: 0.7277 - val_accuracy: 0.7224
+
+Epoch 00030: val_loss improved from 0.74457 to 0.72770, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 31/500
+47/47 - 1s - loss: 0.5399 - accuracy: 0.7863 - val_loss: 0.7301 - val_accuracy: 0.7188
+
+Epoch 00031: val_loss did not improve from 0.72770
+Epoch 32/500
+47/47 - 1s - loss: 0.5409 - accuracy: 0.7906 - val_loss: 0.7329 - val_accuracy: 0.7231
+
+Epoch 00032: val_loss did not improve from 0.72770
+Epoch 33/500
+47/47 - 1s - loss: 0.5373 - accuracy: 0.7859 - val_loss: 0.7107 - val_accuracy: 0.7282
+
+Epoch 00033: val_loss improved from 0.72770 to 0.71071, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 34/500
+47/47 - 1s - loss: 0.5391 - accuracy: 0.7910 - val_loss: 0.7550 - val_accuracy: 0.7090
+
+Epoch 00034: val_loss did not improve from 0.71071
+Epoch 35/500
+47/47 - 1s - loss: 0.5298 - accuracy: 0.7966 - val_loss: 0.7186 - val_accuracy: 0.7177
+
+Epoch 00035: val_loss did not improve from 0.71071
+Epoch 36/500
+47/47 - 1s - loss: 0.5113 - accuracy: 0.8043 - val_loss: 0.7651 - val_accuracy: 0.7161
+
+Epoch 00036: val_loss did not improve from 0.71071
+Epoch 37/500
+47/47 - 1s - loss: 0.5237 - accuracy: 0.7967 - val_loss: 0.7433 - val_accuracy: 0.7261
+
+Epoch 00037: val_loss did not improve from 0.71071
+Epoch 38/500
+47/47 - 1s - loss: 0.5007 - accuracy: 0.8078 - val_loss: 0.6973 - val_accuracy: 0.7386
+
+Epoch 00038: val_loss improved from 0.71071 to 0.69731, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 39/500
+47/47 - 1s - loss: 0.4843 - accuracy: 0.8121 - val_loss: 0.7083 - val_accuracy: 0.7382
+
+Epoch 00039: val_loss did not improve from 0.69731
+Epoch 40/500
+47/47 - 1s - loss: 0.4811 - accuracy: 0.8090 - val_loss: 0.6928 - val_accuracy: 0.7480
+
+Epoch 00040: val_loss improved from 0.69731 to 0.69279, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 41/500
+47/47 - 1s - loss: 0.4701 - accuracy: 0.8239 - val_loss: 0.6857 - val_accuracy: 0.7466
+
+Epoch 00041: val_loss improved from 0.69279 to 0.68570, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 42/500
+47/47 - 1s - loss: 0.4703 - accuracy: 0.8177 - val_loss: 0.6926 - val_accuracy: 0.7403
+
+Epoch 00042: val_loss did not improve from 0.68570
+Epoch 43/500
+47/47 - 1s - loss: 0.4546 - accuracy: 0.8236 - val_loss: 0.7085 - val_accuracy: 0.7366
+
+Epoch 00043: val_loss did not improve from 0.68570
+Epoch 44/500
+47/47 - 1s - loss: 0.4475 - accuracy: 0.8327 - val_loss: 0.7064 - val_accuracy: 0.7423
+
+Epoch 00044: val_loss did not improve from 0.68570
+Epoch 45/500
+47/47 - 1s - loss: 0.4500 - accuracy: 0.8293 - val_loss: 0.7115 - val_accuracy: 0.7483
+
+Epoch 00045: val_loss did not improve from 0.68570
+Epoch 46/500
+47/47 - 1s - loss: 0.4458 - accuracy: 0.8310 - val_loss: 0.7046 - val_accuracy: 0.7382
+
+Epoch 00046: val_loss did not improve from 0.68570
+Epoch 47/500
+47/47 - 1s - loss: 0.4418 - accuracy: 0.8352 - val_loss: 0.6803 - val_accuracy: 0.7550
+
+Epoch 00047: val_loss improved from 0.68570 to 0.68035, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 48/500
+47/47 - 1s - loss: 0.4520 - accuracy: 0.8257 - val_loss: 0.7066 - val_accuracy: 0.7221
+
+Epoch 00048: val_loss did not improve from 0.68035
+Epoch 49/500
+47/47 - 1s - loss: 0.4306 - accuracy: 0.8387 - val_loss: 0.6510 - val_accuracy: 0.7611
+
+Epoch 00049: val_loss improved from 0.68035 to 0.65102, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 50/500
+47/47 - 1s - loss: 0.4152 - accuracy: 0.8427 - val_loss: 0.6678 - val_accuracy: 0.7604
+
+Epoch 00050: val_loss did not improve from 0.65102
+Epoch 51/500
+47/47 - 1s - loss: 0.4147 - accuracy: 0.8415 - val_loss: 0.6726 - val_accuracy: 0.7524
+
+Epoch 00051: val_loss did not improve from 0.65102
+Epoch 52/500
+47/47 - 1s - loss: 0.4167 - accuracy: 0.8460 - val_loss: 0.6889 - val_accuracy: 0.7530
+
+Epoch 00052: val_loss did not improve from 0.65102
+Epoch 53/500
+47/47 - 1s - loss: 0.4113 - accuracy: 0.8457 - val_loss: 0.6497 - val_accuracy: 0.7587
+
+Epoch 00053: val_loss improved from 0.65102 to 0.64975, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 54/500
+47/47 - 1s - loss: 0.4006 - accuracy: 0.8505 - val_loss: 0.7008 - val_accuracy: 0.7497
+
+Epoch 00054: val_loss did not improve from 0.64975
+Epoch 55/500
+47/47 - 1s - loss: 0.3922 - accuracy: 0.8562 - val_loss: 0.6750 - val_accuracy: 0.7560
+
+Epoch 00055: val_loss did not improve from 0.64975
+Epoch 56/500
+47/47 - 1s - loss: 0.3934 - accuracy: 0.8532 - val_loss: 0.6771 - val_accuracy: 0.7527
+
+Epoch 00056: val_loss did not improve from 0.64975
+Epoch 57/500
+47/47 - 1s - loss: 0.3876 - accuracy: 0.8533 - val_loss: 0.6824 - val_accuracy: 0.7618
+
+Epoch 00057: val_loss did not improve from 0.64975
+Epoch 58/500
+47/47 - 1s - loss: 0.3830 - accuracy: 0.8573 - val_loss: 0.6636 - val_accuracy: 0.7581
+
+Epoch 00058: val_loss did not improve from 0.64975
+Epoch 59/500
+47/47 - 1s - loss: 0.3900 - accuracy: 0.8560 - val_loss: 0.6935 - val_accuracy: 0.7547
+
+Epoch 00059: val_loss did not improve from 0.64975
+Epoch 60/500
+47/47 - 1s - loss: 0.3784 - accuracy: 0.8580 - val_loss: 0.6692 - val_accuracy: 0.7584
+
+Epoch 00060: val_loss did not improve from 0.64975
+Epoch 61/500
+47/47 - 1s - loss: 0.3817 - accuracy: 0.8573 - val_loss: 0.6809 - val_accuracy: 0.7574
+
+Epoch 00061: val_loss did not improve from 0.64975
+Epoch 62/500
+47/47 - 1s - loss: 0.3658 - accuracy: 0.8631 - val_loss: 0.6564 - val_accuracy: 0.7702
+
+Epoch 00062: val_loss did not improve from 0.64975
+Epoch 63/500
+47/47 - 1s - loss: 0.3742 - accuracy: 0.8594 - val_loss: 0.6906 - val_accuracy: 0.7651
+
+Epoch 00063: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+
+Epoch 00063: val_loss did not improve from 0.64975
+Epoch 64/500
+47/47 - 1s - loss: 0.3447 - accuracy: 0.8711 - val_loss: 0.6449 - val_accuracy: 0.7749
+
+Epoch 00064: val_loss improved from 0.64975 to 0.64486, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 65/500
+47/47 - 1s - loss: 0.3190 - accuracy: 0.8835 - val_loss: 0.6378 - val_accuracy: 0.7786
+
+Epoch 00065: val_loss improved from 0.64486 to 0.63779, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 66/500
+47/47 - 1s - loss: 0.3219 - accuracy: 0.8817 - val_loss: 0.6324 - val_accuracy: 0.7799
+
+Epoch 00066: val_loss improved from 0.63779 to 0.63242, saving model to ./Models/MLP_NET_TF0.hdf5
+Epoch 67/500
+47/47 - 1s - loss: 0.3139 - accuracy: 0.8858 - val_loss: 0.6440 - val_accuracy: 0.7792
+
+Epoch 00067: val_loss did not improve from 0.63242
+Epoch 68/500
+47/47 - 1s - loss: 0.3054 - accuracy: 0.8890 - val_loss: 0.6433 - val_accuracy: 0.7728
+
+Epoch 00068: val_loss did not improve from 0.63242
+Epoch 69/500
+47/47 - 1s - loss: 0.3076 - accuracy: 0.8882 - val_loss: 0.6386 - val_accuracy: 0.7789
+
+Epoch 00069: val_loss did not improve from 0.63242
+Epoch 70/500
+47/47 - 1s - loss: 0.2999 - accuracy: 0.8888 - val_loss: 0.6370 - val_accuracy: 0.7779
+
+Epoch 00070: val_loss did not improve from 0.63242
+Epoch 71/500
+47/47 - 1s - loss: 0.3042 - accuracy: 0.8872 - val_loss: 0.6476 - val_accuracy: 0.7715
+
+Epoch 00071: val_loss did not improve from 0.63242
+Epoch 72/500
+47/47 - 1s - loss: 0.2992 - accuracy: 0.8864 - val_loss: 0.6337 - val_accuracy: 0.7823
+
+Epoch 00072: val_loss did not improve from 0.63242
+Epoch 73/500
+47/47 - 1s - loss: 0.2989 - accuracy: 0.8899 - val_loss: 0.6550 - val_accuracy: 0.7789
+
+Epoch 00073: val_loss did not improve from 0.63242
+Epoch 74/500
+47/47 - 1s - loss: 0.2900 - accuracy: 0.8935 - val_loss: 0.6547 - val_accuracy: 0.7755
+
+Epoch 00074: val_loss did not improve from 0.63242
+Epoch 75/500
+47/47 - 1s - loss: 0.2930 - accuracy: 0.8937 - val_loss: 0.6532 - val_accuracy: 0.7752
+
+Epoch 00075: val_loss did not improve from 0.63242
+Epoch 76/500
+47/47 - 1s - loss: 0.2874 - accuracy: 0.8915 - val_loss: 0.6529 - val_accuracy: 0.7792
+
+Epoch 00076: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+
+Epoch 00076: val_loss did not improve from 0.63242
+Epoch 77/500
+47/47 - 1s - loss: 0.2835 - accuracy: 0.8958 - val_loss: 0.6410 - val_accuracy: 0.7819
+
+Epoch 00077: val_loss did not improve from 0.63242
+Epoch 78/500
+47/47 - 1s - loss: 0.2617 - accuracy: 0.9015 - val_loss: 0.6401 - val_accuracy: 0.7829
+
+Epoch 00078: val_loss did not improve from 0.63242
+Epoch 79/500
+47/47 - 1s - loss: 0.2633 - accuracy: 0.9068 - val_loss: 0.6429 - val_accuracy: 0.7839
+
+Epoch 00079: val_loss did not improve from 0.63242
+Epoch 80/500
+47/47 - 1s - loss: 0.2657 - accuracy: 0.9021 - val_loss: 0.6440 - val_accuracy: 0.7826
+
+Epoch 00080: val_loss did not improve from 0.63242
+Epoch 81/500
+47/47 - 1s - loss: 0.2616 - accuracy: 0.9034 - val_loss: 0.6350 - val_accuracy: 0.7802
+
+Epoch 00081: val_loss did not improve from 0.63242
+Epoch 82/500
+47/47 - 1s - loss: 0.2630 - accuracy: 0.9041 - val_loss: 0.6402 - val_accuracy: 0.7796
+
+Epoch 00082: val_loss did not improve from 0.63242
+Epoch 83/500
+47/47 - 1s - loss: 0.2685 - accuracy: 0.9014 - val_loss: 0.6361 - val_accuracy: 0.7789
+
+Epoch 00083: val_loss did not improve from 0.63242
+Epoch 84/500
+47/47 - 1s - loss: 0.2534 - accuracy: 0.9097 - val_loss: 0.6365 - val_accuracy: 0.7833
+
+Epoch 00084: val_loss did not improve from 0.63242
+Epoch 85/500
+47/47 - 1s - loss: 0.2601 - accuracy: 0.9063 - val_loss: 0.6366 - val_accuracy: 0.7796
+
+Epoch 00085: val_loss did not improve from 0.63242
+Epoch 86/500
+47/47 - 1s - loss: 0.2651 - accuracy: 0.9031 - val_loss: 0.6422 - val_accuracy: 0.7796
+
+Epoch 00086: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+
+Epoch 00086: val_loss did not improve from 0.63242
+Epoch 87/500
+47/47 - 1s - loss: 0.2484 - accuracy: 0.9106 - val_loss: 0.6417 - val_accuracy: 0.7792
+
+Epoch 00087: val_loss did not improve from 0.63242
+Epoch 88/500
+47/47 - 1s - loss: 0.2438 - accuracy: 0.9112 - val_loss: 0.6425 - val_accuracy: 0.7782
+
+Epoch 00088: val_loss did not improve from 0.63242
+Epoch 89/500
+47/47 - 1s - loss: 0.2484 - accuracy: 0.9126 - val_loss: 0.6448 - val_accuracy: 0.7806
+
+Epoch 00089: val_loss did not improve from 0.63242
+Epoch 90/500
+47/47 - 1s - loss: 0.2459 - accuracy: 0.9081 - val_loss: 0.6452 - val_accuracy: 0.7796
+
+Epoch 00090: val_loss did not improve from 0.63242
+Epoch 91/500
+47/47 - 1s - loss: 0.2505 - accuracy: 0.9072 - val_loss: 0.6466 - val_accuracy: 0.7806
+
+Epoch 00091: val_loss did not improve from 0.63242
+Epoch 92/500
+47/47 - 1s - loss: 0.2498 - accuracy: 0.9108 - val_loss: 0.6441 - val_accuracy: 0.7823
+
+Epoch 00092: val_loss did not improve from 0.63242
+Epoch 93/500
+47/47 - 1s - loss: 0.2481 - accuracy: 0.9130 - val_loss: 0.6476 - val_accuracy: 0.7816
+
+Epoch 00093: val_loss did not improve from 0.63242
+Epoch 94/500
+47/47 - 1s - loss: 0.2477 - accuracy: 0.9135 - val_loss: 0.6439 - val_accuracy: 0.7883
+
+Epoch 00094: val_loss did not improve from 0.63242
+Epoch 95/500
+47/47 - 1s - loss: 0.2480 - accuracy: 0.9093 - val_loss: 0.6464 - val_accuracy: 0.7823
+
+Epoch 00095: val_loss did not improve from 0.63242
+Epoch 96/500
+47/47 - 1s - loss: 0.2400 - accuracy: 0.9137 - val_loss: 0.6469 - val_accuracy: 0.7829
+
+Epoch 00096: ReduceLROnPlateau reducing learning rate to 6.25000029685907e-05.
+
+Epoch 00096: val_loss did not improve from 0.63242
+Epoch 97/500
+47/47 - 1s - loss: 0.2429 - accuracy: 0.9070 - val_loss: 0.6498 - val_accuracy: 0.7826
+
+Epoch 00097: val_loss did not improve from 0.63242
+Epoch 98/500
+47/47 - 1s - loss: 0.2365 - accuracy: 0.9128 - val_loss: 0.6507 - val_accuracy: 0.7823
+
+Epoch 00098: val_loss did not improve from 0.63242
+Epoch 99/500
+47/47 - 1s - loss: 0.2358 - accuracy: 0.9125 - val_loss: 0.6478 - val_accuracy: 0.7819
+
+Epoch 00099: val_loss did not improve from 0.63242
+Epoch 100/500
+47/47 - 1s - loss: 0.2320 - accuracy: 0.9178 - val_loss: 0.6460 - val_accuracy: 0.7823
+
+Epoch 00100: val_loss did not improve from 0.63242
+Epoch 101/500
+47/47 - 1s - loss: 0.2289 - accuracy: 0.9172 - val_loss: 0.6460 - val_accuracy: 0.7809
+
+Epoch 00101: val_loss did not improve from 0.63242
+Epoch 102/500
+47/47 - 1s - loss: 0.2254 - accuracy: 0.9199 - val_loss: 0.6448 - val_accuracy: 0.7819
+
+Epoch 00102: val_loss did not improve from 0.63242
+Epoch 103/500
+47/47 - 1s - loss: 0.2449 - accuracy: 0.9108 - val_loss: 0.6450 - val_accuracy: 0.7846
+
+Epoch 00103: val_loss did not improve from 0.63242
+Epoch 104/500
+47/47 - 1s - loss: 0.2430 - accuracy: 0.9135 - val_loss: 0.6461 - val_accuracy: 0.7816
+
+Epoch 00104: val_loss did not improve from 0.63242
+Epoch 105/500
+47/47 - 1s - loss: 0.2296 - accuracy: 0.9156 - val_loss: 0.6480 - val_accuracy: 0.7829
+
+Epoch 00105: val_loss did not improve from 0.63242
+Epoch 106/500
+47/47 - 1s - loss: 0.2327 - accuracy: 0.9160 - val_loss: 0.6509 - val_accuracy: 0.7833
+
+Epoch 00106: ReduceLROnPlateau reducing learning rate to 3.125000148429535e-05.
+
+Epoch 00106: val_loss did not improve from 0.63242
+Epoch 107/500
+47/47 - 1s - loss: 0.2336 - accuracy: 0.9144 - val_loss: 0.6514 - val_accuracy: 0.7812
+
+Epoch 00107: val_loss did not improve from 0.63242
+Epoch 108/500
+47/47 - 1s - loss: 0.2320 - accuracy: 0.9178 - val_loss: 0.6512 - val_accuracy: 0.7802
+
+Epoch 00108: val_loss did not improve from 0.63242
+Epoch 109/500
+47/47 - 1s - loss: 0.2294 - accuracy: 0.9191 - val_loss: 0.6498 - val_accuracy: 0.7806
+
+Epoch 00109: val_loss did not improve from 0.63242
+Epoch 110/500
+47/47 - 1s - loss: 0.2321 - accuracy: 0.9154 - val_loss: 0.6495 - val_accuracy: 0.7799
+
+Epoch 00110: val_loss did not improve from 0.63242
+Epoch 111/500
+47/47 - 1s - loss: 0.2374 - accuracy: 0.9143 - val_loss: 0.6496 - val_accuracy: 0.7799
+
+Epoch 00111: val_loss did not improve from 0.63242
+Epoch 112/500
+47/47 - 1s - loss: 0.2264 - accuracy: 0.9177 - val_loss: 0.6491 - val_accuracy: 0.7812
+
+Epoch 00112: val_loss did not improve from 0.63242
+Epoch 113/500
+47/47 - 1s - loss: 0.2306 - accuracy: 0.9172 - val_loss: 0.6490 - val_accuracy: 0.7809
+
+Epoch 00113: val_loss did not improve from 0.63242
+Epoch 114/500
+47/47 - 1s - loss: 0.2274 - accuracy: 0.9160 - val_loss: 0.6515 - val_accuracy: 0.7796
+
+Epoch 00114: val_loss did not improve from 0.63242
+Epoch 115/500
+47/47 - 1s - loss: 0.2217 - accuracy: 0.9209 - val_loss: 0.6530 - val_accuracy: 0.7792
+
+Epoch 00115: val_loss did not improve from 0.63242
+Epoch 116/500
+47/47 - 1s - loss: 0.2279 - accuracy: 0.9166 - val_loss: 0.6506 - val_accuracy: 0.7812
+
+Epoch 00116: ReduceLROnPlateau reducing learning rate to 1.5625000742147677e-05.
+Restoring model weights from the end of the best epoch.
+
+Epoch 00116: val_loss did not improve from 0.63242
+Epoch 00116: early stopping
+
+Fold: 1
+Model: "MLP_NET_TF"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_2 (InputLayer)         [(None, 100, 3)]          0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 300)               0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 256)               77056     
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 256)               1024      
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 256)               0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 128)               32896     
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 128)               512       
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 6)                 774       
+=================================================================
+Total params: 112,262
+Trainable params: 111,494
+Non-trainable params: 768
+_________________________________________________________________
+None
+Epoch 1/500
+47/47 - 4s - loss: 1.7128 - accuracy: 0.4356 - val_loss: 1.6802 - val_accuracy: 0.4147
+
+Epoch 00001: val_loss improved from inf to 1.68019, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 2/500
+47/47 - 1s - loss: 1.2891 - accuracy: 0.5324 - val_loss: 1.2592 - val_accuracy: 0.5444
+
+Epoch 00002: val_loss improved from 1.68019 to 1.25925, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 3/500
+47/47 - 1s - loss: 1.1440 - accuracy: 0.5618 - val_loss: 1.0491 - val_accuracy: 0.6425
+
+Epoch 00003: val_loss improved from 1.25925 to 1.04909, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 4/500
+47/47 - 1s - loss: 1.0602 - accuracy: 0.5834 - val_loss: 0.9487 - val_accuracy: 0.6431
+
+Epoch 00004: val_loss improved from 1.04909 to 0.94868, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 5/500
+47/47 - 1s - loss: 0.9963 - accuracy: 0.6017 - val_loss: 0.9049 - val_accuracy: 0.6526
+
+Epoch 00005: val_loss improved from 0.94868 to 0.90494, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 6/500
+47/47 - 1s - loss: 0.9460 - accuracy: 0.6169 - val_loss: 0.8839 - val_accuracy: 0.6492
+
+Epoch 00006: val_loss improved from 0.90494 to 0.88394, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 7/500
+47/47 - 1s - loss: 0.9122 - accuracy: 0.6291 - val_loss: 0.8480 - val_accuracy: 0.6589
+
+Epoch 00007: val_loss improved from 0.88394 to 0.84796, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 8/500
+47/47 - 1s - loss: 0.8612 - accuracy: 0.6482 - val_loss: 0.8177 - val_accuracy: 0.6650
+
+Epoch 00008: val_loss improved from 0.84796 to 0.81769, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 9/500
+47/47 - 1s - loss: 0.8468 - accuracy: 0.6604 - val_loss: 0.8362 - val_accuracy: 0.6569
+
+Epoch 00009: val_loss did not improve from 0.81769
+Epoch 10/500
+47/47 - 1s - loss: 0.8159 - accuracy: 0.6684 - val_loss: 0.8032 - val_accuracy: 0.6690
+
+Epoch 00010: val_loss improved from 0.81769 to 0.80316, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 11/500
+47/47 - 1s - loss: 0.8096 - accuracy: 0.6706 - val_loss: 0.8228 - val_accuracy: 0.6747
+
+Epoch 00011: val_loss did not improve from 0.80316
+Epoch 12/500
+47/47 - 1s - loss: 0.7786 - accuracy: 0.6814 - val_loss: 0.7898 - val_accuracy: 0.6815
+
+Epoch 00012: val_loss improved from 0.80316 to 0.78976, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 13/500
+47/47 - 1s - loss: 0.7560 - accuracy: 0.6901 - val_loss: 0.7856 - val_accuracy: 0.6778
+
+Epoch 00013: val_loss improved from 0.78976 to 0.78561, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 14/500
+47/47 - 1s - loss: 0.7389 - accuracy: 0.6975 - val_loss: 0.7750 - val_accuracy: 0.6831
+
+Epoch 00014: val_loss improved from 0.78561 to 0.77495, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 15/500
+47/47 - 1s - loss: 0.7363 - accuracy: 0.6998 - val_loss: 0.7620 - val_accuracy: 0.6925
+
+Epoch 00015: val_loss improved from 0.77495 to 0.76205, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 16/500
+47/47 - 1s - loss: 0.7147 - accuracy: 0.7069 - val_loss: 0.7513 - val_accuracy: 0.6858
+
+Epoch 00016: val_loss improved from 0.76205 to 0.75127, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 17/500
+47/47 - 1s - loss: 0.7041 - accuracy: 0.7145 - val_loss: 0.7625 - val_accuracy: 0.6979
+
+Epoch 00017: val_loss did not improve from 0.75127
+Epoch 18/500
+47/47 - 1s - loss: 0.6795 - accuracy: 0.7248 - val_loss: 0.7708 - val_accuracy: 0.6969
+
+Epoch 00018: val_loss did not improve from 0.75127
+Epoch 19/500
+47/47 - 1s - loss: 0.6769 - accuracy: 0.7280 - val_loss: 0.7570 - val_accuracy: 0.7043
+
+Epoch 00019: val_loss did not improve from 0.75127
+Epoch 20/500
+47/47 - 1s - loss: 0.6720 - accuracy: 0.7267 - val_loss: 0.7442 - val_accuracy: 0.7003
+
+Epoch 00020: val_loss improved from 0.75127 to 0.74424, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 21/500
+47/47 - 1s - loss: 0.6445 - accuracy: 0.7393 - val_loss: 0.7368 - val_accuracy: 0.7019
+
+Epoch 00021: val_loss improved from 0.74424 to 0.73683, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 22/500
+47/47 - 1s - loss: 0.6376 - accuracy: 0.7486 - val_loss: 0.7353 - val_accuracy: 0.7100
+
+Epoch 00022: val_loss improved from 0.73683 to 0.73527, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 23/500
+47/47 - 1s - loss: 0.6205 - accuracy: 0.7505 - val_loss: 0.7464 - val_accuracy: 0.7114
+
+Epoch 00023: val_loss did not improve from 0.73527
+Epoch 24/500
+47/47 - 1s - loss: 0.6245 - accuracy: 0.7521 - val_loss: 0.7257 - val_accuracy: 0.7174
+
+Epoch 00024: val_loss improved from 0.73527 to 0.72566, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 25/500
+47/47 - 1s - loss: 0.6003 - accuracy: 0.7610 - val_loss: 0.7220 - val_accuracy: 0.7127
+
+Epoch 00025: val_loss improved from 0.72566 to 0.72199, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 26/500
+47/47 - 1s - loss: 0.5971 - accuracy: 0.7643 - val_loss: 0.7113 - val_accuracy: 0.7174
+
+Epoch 00026: val_loss improved from 0.72199 to 0.71129, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 27/500
+47/47 - 1s - loss: 0.5813 - accuracy: 0.7711 - val_loss: 0.7152 - val_accuracy: 0.7167
+
+Epoch 00027: val_loss did not improve from 0.71129
+Epoch 28/500
+47/47 - 1s - loss: 0.5672 - accuracy: 0.7710 - val_loss: 0.7056 - val_accuracy: 0.7224
+
+Epoch 00028: val_loss improved from 0.71129 to 0.70557, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 29/500
+47/47 - 1s - loss: 0.5702 - accuracy: 0.7773 - val_loss: 0.7365 - val_accuracy: 0.7117
+
+Epoch 00029: val_loss did not improve from 0.70557
+Epoch 30/500
+47/47 - 1s - loss: 0.5695 - accuracy: 0.7784 - val_loss: 0.7279 - val_accuracy: 0.7184
+
+Epoch 00030: val_loss did not improve from 0.70557
+Epoch 31/500
+47/47 - 1s - loss: 0.5518 - accuracy: 0.7826 - val_loss: 0.7213 - val_accuracy: 0.7288
+
+Epoch 00031: val_loss did not improve from 0.70557
+Epoch 32/500
+47/47 - 1s - loss: 0.5525 - accuracy: 0.7841 - val_loss: 0.7232 - val_accuracy: 0.7288
+
+Epoch 00032: val_loss did not improve from 0.70557
+Epoch 33/500
+47/47 - 1s - loss: 0.5407 - accuracy: 0.7898 - val_loss: 0.7061 - val_accuracy: 0.7356
+
+Epoch 00033: val_loss did not improve from 0.70557
+Epoch 34/500
+47/47 - 1s - loss: 0.5274 - accuracy: 0.7937 - val_loss: 0.6869 - val_accuracy: 0.7386
+
+Epoch 00034: val_loss improved from 0.70557 to 0.68687, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 35/500
+47/47 - 1s - loss: 0.5120 - accuracy: 0.7965 - val_loss: 0.6842 - val_accuracy: 0.7389
+
+Epoch 00035: val_loss improved from 0.68687 to 0.68423, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 36/500
+47/47 - 1s - loss: 0.5177 - accuracy: 0.7965 - val_loss: 0.6720 - val_accuracy: 0.7426
+
+Epoch 00036: val_loss improved from 0.68423 to 0.67199, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 37/500
+47/47 - 1s - loss: 0.4975 - accuracy: 0.8054 - val_loss: 0.7185 - val_accuracy: 0.7399
+
+Epoch 00037: val_loss did not improve from 0.67199
+Epoch 38/500
+47/47 - 1s - loss: 0.5128 - accuracy: 0.8045 - val_loss: 0.6824 - val_accuracy: 0.7362
+
+Epoch 00038: val_loss did not improve from 0.67199
+Epoch 39/500
+47/47 - 1s - loss: 0.4938 - accuracy: 0.8084 - val_loss: 0.6818 - val_accuracy: 0.7376
+
+Epoch 00039: val_loss did not improve from 0.67199
+Epoch 40/500
+47/47 - 1s - loss: 0.4893 - accuracy: 0.8111 - val_loss: 0.6775 - val_accuracy: 0.7453
+
+Epoch 00040: val_loss did not improve from 0.67199
+Epoch 41/500
+47/47 - 1s - loss: 0.4758 - accuracy: 0.8173 - val_loss: 0.7167 - val_accuracy: 0.7382
+
+Epoch 00041: val_loss did not improve from 0.67199
+Epoch 42/500
+47/47 - 1s - loss: 0.4727 - accuracy: 0.8210 - val_loss: 0.6697 - val_accuracy: 0.7456
+
+Epoch 00042: val_loss improved from 0.67199 to 0.66968, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 43/500
+47/47 - 1s - loss: 0.4593 - accuracy: 0.8279 - val_loss: 0.7146 - val_accuracy: 0.7406
+
+Epoch 00043: val_loss did not improve from 0.66968
+Epoch 44/500
+47/47 - 1s - loss: 0.4487 - accuracy: 0.8254 - val_loss: 0.6678 - val_accuracy: 0.7503
+
+Epoch 00044: val_loss improved from 0.66968 to 0.66782, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 45/500
+47/47 - 1s - loss: 0.4475 - accuracy: 0.8295 - val_loss: 0.6817 - val_accuracy: 0.7413
+
+Epoch 00045: val_loss did not improve from 0.66782
+Epoch 46/500
+47/47 - 1s - loss: 0.4572 - accuracy: 0.8284 - val_loss: 0.6631 - val_accuracy: 0.7507
+
+Epoch 00046: val_loss improved from 0.66782 to 0.66311, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 47/500
+47/47 - 1s - loss: 0.4482 - accuracy: 0.8296 - val_loss: 0.6937 - val_accuracy: 0.7433
+
+Epoch 00047: val_loss did not improve from 0.66311
+Epoch 48/500
+47/47 - 1s - loss: 0.4457 - accuracy: 0.8318 - val_loss: 0.6567 - val_accuracy: 0.7550
+
+Epoch 00048: val_loss improved from 0.66311 to 0.65671, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 49/500
+47/47 - 1s - loss: 0.4318 - accuracy: 0.8373 - val_loss: 0.6405 - val_accuracy: 0.7634
+
+Epoch 00049: val_loss improved from 0.65671 to 0.64048, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 50/500
+47/47 - 1s - loss: 0.4232 - accuracy: 0.8380 - val_loss: 0.6384 - val_accuracy: 0.7648
+
+Epoch 00050: val_loss improved from 0.64048 to 0.63842, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 51/500
+47/47 - 1s - loss: 0.4304 - accuracy: 0.8380 - val_loss: 0.6425 - val_accuracy: 0.7648
+
+Epoch 00051: val_loss did not improve from 0.63842
+Epoch 52/500
+47/47 - 1s - loss: 0.4213 - accuracy: 0.8401 - val_loss: 0.6372 - val_accuracy: 0.7608
+
+Epoch 00052: val_loss improved from 0.63842 to 0.63720, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 53/500
+47/47 - 1s - loss: 0.4060 - accuracy: 0.8464 - val_loss: 0.6133 - val_accuracy: 0.7725
+
+Epoch 00053: val_loss improved from 0.63720 to 0.61325, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 54/500
+47/47 - 1s - loss: 0.4068 - accuracy: 0.8452 - val_loss: 0.6450 - val_accuracy: 0.7678
+
+Epoch 00054: val_loss did not improve from 0.61325
+Epoch 55/500
+47/47 - 1s - loss: 0.4092 - accuracy: 0.8447 - val_loss: 0.6548 - val_accuracy: 0.7611
+
+Epoch 00055: val_loss did not improve from 0.61325
+Epoch 56/500
+47/47 - 1s - loss: 0.3878 - accuracy: 0.8514 - val_loss: 0.6324 - val_accuracy: 0.7628
+
+Epoch 00056: val_loss did not improve from 0.61325
+Epoch 57/500
+47/47 - 1s - loss: 0.3899 - accuracy: 0.8516 - val_loss: 0.6752 - val_accuracy: 0.7594
+
+Epoch 00057: val_loss did not improve from 0.61325
+Epoch 58/500
+47/47 - 1s - loss: 0.3880 - accuracy: 0.8534 - val_loss: 0.6429 - val_accuracy: 0.7644
+
+Epoch 00058: val_loss did not improve from 0.61325
+Epoch 59/500
+47/47 - 1s - loss: 0.3894 - accuracy: 0.8519 - val_loss: 0.6196 - val_accuracy: 0.7789
+
+Epoch 00059: val_loss did not improve from 0.61325
+Epoch 60/500
+47/47 - 1s - loss: 0.3833 - accuracy: 0.8559 - val_loss: 0.6158 - val_accuracy: 0.7752
+
+Epoch 00060: val_loss did not improve from 0.61325
+Epoch 61/500
+47/47 - 1s - loss: 0.3757 - accuracy: 0.8615 - val_loss: 0.6290 - val_accuracy: 0.7702
+
+Epoch 00061: val_loss did not improve from 0.61325
+Epoch 62/500
+47/47 - 1s - loss: 0.3764 - accuracy: 0.8567 - val_loss: 0.6289 - val_accuracy: 0.7725
+
+Epoch 00062: val_loss did not improve from 0.61325
+Epoch 63/500
+47/47 - 1s - loss: 0.3657 - accuracy: 0.8648 - val_loss: 0.6517 - val_accuracy: 0.7675
+
+Epoch 00063: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+
+Epoch 00063: val_loss did not improve from 0.61325
+Epoch 64/500
+47/47 - 1s - loss: 0.3456 - accuracy: 0.8701 - val_loss: 0.5964 - val_accuracy: 0.7765
+
+Epoch 00064: val_loss improved from 0.61325 to 0.59645, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 65/500
+47/47 - 1s - loss: 0.3354 - accuracy: 0.8736 - val_loss: 0.5954 - val_accuracy: 0.7769
+
+Epoch 00065: val_loss improved from 0.59645 to 0.59538, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 66/500
+47/47 - 1s - loss: 0.3146 - accuracy: 0.8858 - val_loss: 0.5817 - val_accuracy: 0.7863
+
+Epoch 00066: val_loss improved from 0.59538 to 0.58165, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 67/500
+47/47 - 1s - loss: 0.3211 - accuracy: 0.8793 - val_loss: 0.5847 - val_accuracy: 0.7809
+
+Epoch 00067: val_loss did not improve from 0.58165
+Epoch 68/500
+47/47 - 1s - loss: 0.3167 - accuracy: 0.8849 - val_loss: 0.5782 - val_accuracy: 0.7819
+
+Epoch 00068: val_loss improved from 0.58165 to 0.57817, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 69/500
+47/47 - 1s - loss: 0.3143 - accuracy: 0.8867 - val_loss: 0.5827 - val_accuracy: 0.7846
+
+Epoch 00069: val_loss did not improve from 0.57817
+Epoch 70/500
+47/47 - 1s - loss: 0.3107 - accuracy: 0.8848 - val_loss: 0.5937 - val_accuracy: 0.7789
+
+Epoch 00070: val_loss did not improve from 0.57817
+Epoch 71/500
+47/47 - 1s - loss: 0.3058 - accuracy: 0.8873 - val_loss: 0.5858 - val_accuracy: 0.7786
+
+Epoch 00071: val_loss did not improve from 0.57817
+Epoch 72/500
+47/47 - 1s - loss: 0.3017 - accuracy: 0.8900 - val_loss: 0.5900 - val_accuracy: 0.7722
+
+Epoch 00072: val_loss did not improve from 0.57817
+Epoch 73/500
+47/47 - 1s - loss: 0.2956 - accuracy: 0.8911 - val_loss: 0.5821 - val_accuracy: 0.7786
+
+Epoch 00073: val_loss did not improve from 0.57817
+Epoch 74/500
+47/47 - 1s - loss: 0.3046 - accuracy: 0.8862 - val_loss: 0.5987 - val_accuracy: 0.7749
+
+Epoch 00074: val_loss did not improve from 0.57817
+Epoch 75/500
+47/47 - 1s - loss: 0.2951 - accuracy: 0.8912 - val_loss: 0.5745 - val_accuracy: 0.7843
+
+Epoch 00075: val_loss improved from 0.57817 to 0.57453, saving model to ./Models/MLP_NET_TF1.hdf5
+Epoch 76/500
+47/47 - 1s - loss: 0.3012 - accuracy: 0.8897 - val_loss: 0.5856 - val_accuracy: 0.7829
+
+Epoch 00076: val_loss did not improve from 0.57453
+Epoch 77/500
+47/47 - 1s - loss: 0.2926 - accuracy: 0.8935 - val_loss: 0.5948 - val_accuracy: 0.7819
+
+Epoch 00077: val_loss did not improve from 0.57453
+Epoch 78/500
+47/47 - 1s - loss: 0.2838 - accuracy: 0.8951 - val_loss: 0.5751 - val_accuracy: 0.7870
+
+Epoch 00078: val_loss did not improve from 0.57453
+Epoch 79/500
+47/47 - 1s - loss: 0.2871 - accuracy: 0.8935 - val_loss: 0.5916 - val_accuracy: 0.7836
+
+Epoch 00079: val_loss did not improve from 0.57453
+Epoch 80/500
+47/47 - 1s - loss: 0.2859 - accuracy: 0.8942 - val_loss: 0.6019 - val_accuracy: 0.7776
+
+Epoch 00080: val_loss did not improve from 0.57453
+Epoch 81/500
+47/47 - 1s - loss: 0.2795 - accuracy: 0.8941 - val_loss: 0.5867 - val_accuracy: 0.7823
+
+Epoch 00081: val_loss did not improve from 0.57453
+Epoch 82/500
+47/47 - 1s - loss: 0.2826 - accuracy: 0.8963 - val_loss: 0.5912 - val_accuracy: 0.7819
+
+Epoch 00082: val_loss did not improve from 0.57453
+Epoch 83/500
+47/47 - 1s - loss: 0.2801 - accuracy: 0.8968 - val_loss: 0.6048 - val_accuracy: 0.7809
+
+Epoch 00083: val_loss did not improve from 0.57453
+Epoch 84/500
+47/47 - 1s - loss: 0.2791 - accuracy: 0.8963 - val_loss: 0.6044 - val_accuracy: 0.7823
+
+Epoch 00084: val_loss did not improve from 0.57453
+Epoch 85/500
+47/47 - 1s - loss: 0.2737 - accuracy: 0.8997 - val_loss: 0.6064 - val_accuracy: 0.7809
+
+Epoch 00085: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+
+Epoch 00085: val_loss did not improve from 0.57453
+Epoch 86/500
+47/47 - 1s - loss: 0.2726 - accuracy: 0.9003 - val_loss: 0.5941 - val_accuracy: 0.7823
+
+Epoch 00086: val_loss did not improve from 0.57453
+Epoch 87/500
+47/47 - 1s - loss: 0.2638 - accuracy: 0.9033 - val_loss: 0.5893 - val_accuracy: 0.7765
+
+Epoch 00087: val_loss did not improve from 0.57453
+Epoch 88/500
+47/47 - 1s - loss: 0.2554 - accuracy: 0.9064 - val_loss: 0.5873 - val_accuracy: 0.7796
+
+Epoch 00088: val_loss did not improve from 0.57453
+Epoch 89/500
+47/47 - 1s - loss: 0.2478 - accuracy: 0.9083 - val_loss: 0.5861 - val_accuracy: 0.7819
+
+Epoch 00089: val_loss did not improve from 0.57453
+Epoch 90/500
+47/47 - 1s - loss: 0.2602 - accuracy: 0.9033 - val_loss: 0.5871 - val_accuracy: 0.7789
+
+Epoch 00090: val_loss did not improve from 0.57453
+Epoch 91/500
+47/47 - 1s - loss: 0.2539 - accuracy: 0.9059 - val_loss: 0.5766 - val_accuracy: 0.7843
+
+Epoch 00091: val_loss did not improve from 0.57453
+Epoch 92/500
+47/47 - 1s - loss: 0.2432 - accuracy: 0.9109 - val_loss: 0.5874 - val_accuracy: 0.7806
+
+Epoch 00092: val_loss did not improve from 0.57453
+Epoch 93/500
+47/47 - 1s - loss: 0.2401 - accuracy: 0.9163 - val_loss: 0.5856 - val_accuracy: 0.7812
+
+Epoch 00093: val_loss did not improve from 0.57453
+Epoch 94/500
+47/47 - 1s - loss: 0.2505 - accuracy: 0.9061 - val_loss: 0.5956 - val_accuracy: 0.7829
+
+Epoch 00094: val_loss did not improve from 0.57453
+Epoch 95/500
+47/47 - 1s - loss: 0.2453 - accuracy: 0.9127 - val_loss: 0.5824 - val_accuracy: 0.7893
+
+Epoch 00095: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+
+Epoch 00095: val_loss did not improve from 0.57453
+Epoch 96/500
+47/47 - 1s - loss: 0.2370 - accuracy: 0.9148 - val_loss: 0.5839 - val_accuracy: 0.7900
+
+Epoch 00096: val_loss did not improve from 0.57453
+Epoch 97/500
+47/47 - 1s - loss: 0.2424 - accuracy: 0.9159 - val_loss: 0.5860 - val_accuracy: 0.7870
+
+Epoch 00097: val_loss did not improve from 0.57453
+Epoch 98/500
+47/47 - 1s - loss: 0.2312 - accuracy: 0.9163 - val_loss: 0.5874 - val_accuracy: 0.7846
+
+Epoch 00098: val_loss did not improve from 0.57453
+Epoch 99/500
+47/47 - 1s - loss: 0.2378 - accuracy: 0.9159 - val_loss: 0.5844 - val_accuracy: 0.7829
+
+Epoch 00099: val_loss did not improve from 0.57453
+Epoch 100/500
+47/47 - 1s - loss: 0.2302 - accuracy: 0.9181 - val_loss: 0.5855 - val_accuracy: 0.7880
+
+Epoch 00100: val_loss did not improve from 0.57453
+Epoch 101/500
+47/47 - 1s - loss: 0.2312 - accuracy: 0.9135 - val_loss: 0.5888 - val_accuracy: 0.7849
+
+Epoch 00101: val_loss did not improve from 0.57453
+Epoch 102/500
+47/47 - 1s - loss: 0.2361 - accuracy: 0.9132 - val_loss: 0.5859 - val_accuracy: 0.7856
+
+Epoch 00102: val_loss did not improve from 0.57453
+Epoch 103/500
+47/47 - 1s - loss: 0.2333 - accuracy: 0.9156 - val_loss: 0.5845 - val_accuracy: 0.7863
+
+Epoch 00103: val_loss did not improve from 0.57453
+Epoch 104/500
+47/47 - 1s - loss: 0.2327 - accuracy: 0.9187 - val_loss: 0.5811 - val_accuracy: 0.7863
+
+Epoch 00104: val_loss did not improve from 0.57453
+Epoch 105/500
+47/47 - 1s - loss: 0.2349 - accuracy: 0.9130 - val_loss: 0.5828 - val_accuracy: 0.7876
+
+Epoch 00105: ReduceLROnPlateau reducing learning rate to 6.25000029685907e-05.
+
+Epoch 00105: val_loss did not improve from 0.57453
+Epoch 106/500
+47/47 - 1s - loss: 0.2273 - accuracy: 0.9191 - val_loss: 0.5859 - val_accuracy: 0.7886
+
+Epoch 00106: val_loss did not improve from 0.57453
+Epoch 107/500
+47/47 - 1s - loss: 0.2288 - accuracy: 0.9168 - val_loss: 0.5870 - val_accuracy: 0.7873
+
+Epoch 00107: val_loss did not improve from 0.57453
+Epoch 108/500
+47/47 - 1s - loss: 0.2254 - accuracy: 0.9178 - val_loss: 0.5879 - val_accuracy: 0.7863
+
+Epoch 00108: val_loss did not improve from 0.57453
+Epoch 109/500
+47/47 - 1s - loss: 0.2242 - accuracy: 0.9175 - val_loss: 0.5865 - val_accuracy: 0.7883
+
+Epoch 00109: val_loss did not improve from 0.57453
+Epoch 110/500
+47/47 - 1s - loss: 0.2223 - accuracy: 0.9193 - val_loss: 0.5878 - val_accuracy: 0.7866
+
+Epoch 00110: val_loss did not improve from 0.57453
+Epoch 111/500
+47/47 - 1s - loss: 0.2181 - accuracy: 0.9197 - val_loss: 0.5877 - val_accuracy: 0.7886
+
+Epoch 00111: val_loss did not improve from 0.57453
+Epoch 112/500
+47/47 - 1s - loss: 0.2215 - accuracy: 0.9217 - val_loss: 0.5840 - val_accuracy: 0.7883
+
+Epoch 00112: val_loss did not improve from 0.57453
+Epoch 113/500
+47/47 - 1s - loss: 0.2307 - accuracy: 0.9172 - val_loss: 0.5873 - val_accuracy: 0.7863
+
+Epoch 00113: val_loss did not improve from 0.57453
+Epoch 114/500
+47/47 - 1s - loss: 0.2296 - accuracy: 0.9190 - val_loss: 0.5879 - val_accuracy: 0.7897
+
+Epoch 00114: val_loss did not improve from 0.57453
+Epoch 115/500
+47/47 - 1s - loss: 0.2203 - accuracy: 0.9208 - val_loss: 0.5892 - val_accuracy: 0.7880
+
+Epoch 00115: ReduceLROnPlateau reducing learning rate to 3.125000148429535e-05.
+
+Epoch 00115: val_loss did not improve from 0.57453
+Epoch 116/500
+47/47 - 1s - loss: 0.2168 - accuracy: 0.9220 - val_loss: 0.5897 - val_accuracy: 0.7863
+
+Epoch 00116: val_loss did not improve from 0.57453
+Epoch 117/500
+47/47 - 1s - loss: 0.2179 - accuracy: 0.9220 - val_loss: 0.5900 - val_accuracy: 0.7863
+
+Epoch 00117: val_loss did not improve from 0.57453
+Epoch 118/500
+47/47 - 1s - loss: 0.2179 - accuracy: 0.9210 - val_loss: 0.5900 - val_accuracy: 0.7846
+
+Epoch 00118: val_loss did not improve from 0.57453
+Epoch 119/500
+47/47 - 1s - loss: 0.2221 - accuracy: 0.9192 - val_loss: 0.5877 - val_accuracy: 0.7860
+
+Epoch 00119: val_loss did not improve from 0.57453
+Epoch 120/500
+47/47 - 1s - loss: 0.2144 - accuracy: 0.9224 - val_loss: 0.5877 - val_accuracy: 0.7873
+
+Epoch 00120: val_loss did not improve from 0.57453
+Epoch 121/500
+47/47 - 1s - loss: 0.2088 - accuracy: 0.9241 - val_loss: 0.5880 - val_accuracy: 0.7880
+
+Epoch 00121: val_loss did not improve from 0.57453
+Epoch 122/500
+47/47 - 1s - loss: 0.2180 - accuracy: 0.9230 - val_loss: 0.5880 - val_accuracy: 0.7873
+
+Epoch 00122: val_loss did not improve from 0.57453
+Epoch 123/500
+47/47 - 1s - loss: 0.2184 - accuracy: 0.9193 - val_loss: 0.5883 - val_accuracy: 0.7880
+
+Epoch 00123: val_loss did not improve from 0.57453
+Epoch 124/500
+47/47 - 1s - loss: 0.2172 - accuracy: 0.9225 - val_loss: 0.5886 - val_accuracy: 0.7880
+
+Epoch 00124: val_loss did not improve from 0.57453
+Epoch 125/500
+47/47 - 1s - loss: 0.2114 - accuracy: 0.9222 - val_loss: 0.5899 - val_accuracy: 0.7846
+
+Epoch 00125: ReduceLROnPlateau reducing learning rate to 1.5625000742147677e-05.
+Restoring model weights from the end of the best epoch.
+
+Epoch 00125: val_loss did not improve from 0.57453
+Epoch 00125: early stopping
+
+Fold: 2
+Model: "MLP_NET_TF"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_3 (InputLayer)         [(None, 100, 3)]          0         
+_________________________________________________________________
+flatten_2 (Flatten)          (None, 300)               0         
+_________________________________________________________________
+dense_6 (Dense)              (None, 256)               77056     
+_________________________________________________________________
+batch_normalization_4 (Batch (None, 256)               1024      
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 256)               0         
+_________________________________________________________________
+dense_7 (Dense)              (None, 128)               32896     
+_________________________________________________________________
+batch_normalization_5 (Batch (None, 128)               512       
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_8 (Dense)              (None, 6)                 774       
+=================================================================
+Total params: 112,262
+Trainable params: 111,494
+Non-trainable params: 768
+_________________________________________________________________
+None
+Epoch 1/500
+47/47 - 3s - loss: 1.7579 - accuracy: 0.4199 - val_loss: 1.5224 - val_accuracy: 0.4351
+
+Epoch 00001: val_loss improved from inf to 1.52238, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 2/500
+47/47 - 1s - loss: 1.2646 - accuracy: 0.5344 - val_loss: 1.2355 - val_accuracy: 0.5649
+
+Epoch 00002: val_loss improved from 1.52238 to 1.23550, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 3/500
+47/47 - 1s - loss: 1.1323 - accuracy: 0.5685 - val_loss: 1.0559 - val_accuracy: 0.6280
+
+Epoch 00003: val_loss improved from 1.23550 to 1.05592, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 4/500
+47/47 - 1s - loss: 1.0426 - accuracy: 0.5896 - val_loss: 0.9812 - val_accuracy: 0.6458
+
+Epoch 00004: val_loss improved from 1.05592 to 0.98116, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 5/500
+47/47 - 1s - loss: 0.9905 - accuracy: 0.6028 - val_loss: 0.9114 - val_accuracy: 0.6509
+
+Epoch 00005: val_loss improved from 0.98116 to 0.91141, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 6/500
+47/47 - 1s - loss: 0.9463 - accuracy: 0.6182 - val_loss: 0.8701 - val_accuracy: 0.6573
+
+Epoch 00006: val_loss improved from 0.91141 to 0.87006, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 7/500
+47/47 - 1s - loss: 0.8944 - accuracy: 0.6422 - val_loss: 0.8597 - val_accuracy: 0.6586
+
+Epoch 00007: val_loss improved from 0.87006 to 0.85965, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 8/500
+47/47 - 1s - loss: 0.8577 - accuracy: 0.6522 - val_loss: 0.8405 - val_accuracy: 0.6620
+
+Epoch 00008: val_loss improved from 0.85965 to 0.84053, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 9/500
+47/47 - 1s - loss: 0.8378 - accuracy: 0.6644 - val_loss: 0.8182 - val_accuracy: 0.6683
+
+Epoch 00009: val_loss improved from 0.84053 to 0.81822, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 10/500
+47/47 - 1s - loss: 0.8250 - accuracy: 0.6652 - val_loss: 0.8078 - val_accuracy: 0.6734
+
+Epoch 00010: val_loss improved from 0.81822 to 0.80781, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 11/500
+47/47 - 1s - loss: 0.7917 - accuracy: 0.6771 - val_loss: 0.8035 - val_accuracy: 0.6778
+
+Epoch 00011: val_loss improved from 0.80781 to 0.80346, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 12/500
+47/47 - 1s - loss: 0.7734 - accuracy: 0.6838 - val_loss: 0.8115 - val_accuracy: 0.6754
+
+Epoch 00012: val_loss did not improve from 0.80346
+Epoch 13/500
+47/47 - 1s - loss: 0.7548 - accuracy: 0.6936 - val_loss: 0.7616 - val_accuracy: 0.6821
+
+Epoch 00013: val_loss improved from 0.80346 to 0.76164, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 14/500
+47/47 - 1s - loss: 0.7286 - accuracy: 0.7054 - val_loss: 0.7744 - val_accuracy: 0.6865
+
+Epoch 00014: val_loss did not improve from 0.76164
+Epoch 15/500
+47/47 - 1s - loss: 0.7167 - accuracy: 0.7119 - val_loss: 0.7716 - val_accuracy: 0.6895
+
+Epoch 00015: val_loss did not improve from 0.76164
+Epoch 16/500
+47/47 - 1s - loss: 0.7183 - accuracy: 0.7079 - val_loss: 0.7545 - val_accuracy: 0.6966
+
+Epoch 00016: val_loss improved from 0.76164 to 0.75454, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 17/500
+47/47 - 1s - loss: 0.6896 - accuracy: 0.7187 - val_loss: 0.7521 - val_accuracy: 0.6962
+
+Epoch 00017: val_loss improved from 0.75454 to 0.75209, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 18/500
+47/47 - 1s - loss: 0.6769 - accuracy: 0.7255 - val_loss: 0.7534 - val_accuracy: 0.7036
+
+Epoch 00018: val_loss did not improve from 0.75209
+Epoch 19/500
+47/47 - 1s - loss: 0.6640 - accuracy: 0.7294 - val_loss: 0.7373 - val_accuracy: 0.7164
+
+Epoch 00019: val_loss improved from 0.75209 to 0.73731, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 20/500
+47/47 - 1s - loss: 0.6540 - accuracy: 0.7407 - val_loss: 0.7458 - val_accuracy: 0.7023
+
+Epoch 00020: val_loss did not improve from 0.73731
+Epoch 21/500
+47/47 - 1s - loss: 0.6431 - accuracy: 0.7443 - val_loss: 0.7408 - val_accuracy: 0.7063
+
+Epoch 00021: val_loss did not improve from 0.73731
+Epoch 22/500
+47/47 - 1s - loss: 0.6310 - accuracy: 0.7486 - val_loss: 0.7473 - val_accuracy: 0.7030
+
+Epoch 00022: val_loss did not improve from 0.73731
+Epoch 23/500
+47/47 - 1s - loss: 0.6185 - accuracy: 0.7524 - val_loss: 0.7461 - val_accuracy: 0.7110
+
+Epoch 00023: val_loss did not improve from 0.73731
+Epoch 24/500
+47/47 - 1s - loss: 0.6068 - accuracy: 0.7626 - val_loss: 0.7402 - val_accuracy: 0.7087
+
+Epoch 00024: val_loss did not improve from 0.73731
+Epoch 25/500
+47/47 - 1s - loss: 0.6097 - accuracy: 0.7601 - val_loss: 0.7515 - val_accuracy: 0.7053
+
+Epoch 00025: val_loss did not improve from 0.73731
+Epoch 26/500
+47/47 - 1s - loss: 0.5858 - accuracy: 0.7712 - val_loss: 0.7425 - val_accuracy: 0.7093
+
+Epoch 00026: val_loss did not improve from 0.73731
+Epoch 27/500
+47/47 - 1s - loss: 0.5896 - accuracy: 0.7683 - val_loss: 0.7121 - val_accuracy: 0.7231
+
+Epoch 00027: val_loss improved from 0.73731 to 0.71211, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 28/500
+47/47 - 1s - loss: 0.5660 - accuracy: 0.7784 - val_loss: 0.7124 - val_accuracy: 0.7224
+
+Epoch 00028: val_loss did not improve from 0.71211
+Epoch 29/500
+47/47 - 1s - loss: 0.5534 - accuracy: 0.7820 - val_loss: 0.6894 - val_accuracy: 0.7392
+
+Epoch 00029: val_loss improved from 0.71211 to 0.68939, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 30/500
+47/47 - 1s - loss: 0.5567 - accuracy: 0.7785 - val_loss: 0.6862 - val_accuracy: 0.7419
+
+Epoch 00030: val_loss improved from 0.68939 to 0.68620, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 31/500
+47/47 - 1s - loss: 0.5428 - accuracy: 0.7869 - val_loss: 0.6956 - val_accuracy: 0.7376
+
+Epoch 00031: val_loss did not improve from 0.68620
+Epoch 32/500
+47/47 - 1s - loss: 0.5349 - accuracy: 0.7928 - val_loss: 0.7180 - val_accuracy: 0.7322
+
+Epoch 00032: val_loss did not improve from 0.68620
+Epoch 33/500
+47/47 - 1s - loss: 0.5376 - accuracy: 0.7858 - val_loss: 0.7162 - val_accuracy: 0.7224
+
+Epoch 00033: val_loss did not improve from 0.68620
+Epoch 34/500
+47/47 - 1s - loss: 0.5229 - accuracy: 0.7997 - val_loss: 0.6866 - val_accuracy: 0.7349
+
+Epoch 00034: val_loss did not improve from 0.68620
+Epoch 35/500
+47/47 - 1s - loss: 0.5193 - accuracy: 0.7989 - val_loss: 0.6960 - val_accuracy: 0.7429
+
+Epoch 00035: val_loss did not improve from 0.68620
+Epoch 36/500
+47/47 - 1s - loss: 0.5130 - accuracy: 0.7993 - val_loss: 0.6808 - val_accuracy: 0.7483
+
+Epoch 00036: val_loss improved from 0.68620 to 0.68081, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 37/500
+47/47 - 1s - loss: 0.5035 - accuracy: 0.8023 - val_loss: 0.6660 - val_accuracy: 0.7497
+
+Epoch 00037: val_loss improved from 0.68081 to 0.66602, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 38/500
+47/47 - 1s - loss: 0.4969 - accuracy: 0.8142 - val_loss: 0.6710 - val_accuracy: 0.7537
+
+Epoch 00038: val_loss did not improve from 0.66602
+Epoch 39/500
+47/47 - 1s - loss: 0.4786 - accuracy: 0.8148 - val_loss: 0.6769 - val_accuracy: 0.7503
+
+Epoch 00039: val_loss did not improve from 0.66602
+Epoch 40/500
+47/47 - 1s - loss: 0.4860 - accuracy: 0.8131 - val_loss: 0.6808 - val_accuracy: 0.7460
+
+Epoch 00040: val_loss did not improve from 0.66602
+Epoch 41/500
+47/47 - 1s - loss: 0.4697 - accuracy: 0.8195 - val_loss: 0.6662 - val_accuracy: 0.7560
+
+Epoch 00041: val_loss did not improve from 0.66602
+Epoch 42/500
+47/47 - 1s - loss: 0.4701 - accuracy: 0.8210 - val_loss: 0.6916 - val_accuracy: 0.7470
+
+Epoch 00042: val_loss did not improve from 0.66602
+Epoch 43/500
+47/47 - 1s - loss: 0.4613 - accuracy: 0.8220 - val_loss: 0.6883 - val_accuracy: 0.7577
+
+Epoch 00043: val_loss did not improve from 0.66602
+Epoch 44/500
+47/47 - 1s - loss: 0.4510 - accuracy: 0.8249 - val_loss: 0.6714 - val_accuracy: 0.7476
+
+Epoch 00044: val_loss did not improve from 0.66602
+Epoch 45/500
+47/47 - 1s - loss: 0.4509 - accuracy: 0.8304 - val_loss: 0.6460 - val_accuracy: 0.7517
+
+Epoch 00045: val_loss improved from 0.66602 to 0.64603, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 46/500
+47/47 - 1s - loss: 0.4322 - accuracy: 0.8338 - val_loss: 0.6856 - val_accuracy: 0.7524
+
+Epoch 00046: val_loss did not improve from 0.64603
+Epoch 47/500
+47/47 - 1s - loss: 0.4285 - accuracy: 0.8362 - val_loss: 0.6637 - val_accuracy: 0.7550
+
+Epoch 00047: val_loss did not improve from 0.64603
+Epoch 48/500
+47/47 - 1s - loss: 0.4260 - accuracy: 0.8341 - val_loss: 0.6684 - val_accuracy: 0.7564
+
+Epoch 00048: val_loss did not improve from 0.64603
+Epoch 49/500
+47/47 - 1s - loss: 0.4192 - accuracy: 0.8391 - val_loss: 0.6679 - val_accuracy: 0.7621
+
+Epoch 00049: val_loss did not improve from 0.64603
+Epoch 50/500
+47/47 - 1s - loss: 0.4228 - accuracy: 0.8437 - val_loss: 0.6548 - val_accuracy: 0.7591
+
+Epoch 00050: val_loss did not improve from 0.64603
+Epoch 51/500
+47/47 - 1s - loss: 0.4164 - accuracy: 0.8425 - val_loss: 0.6566 - val_accuracy: 0.7587
+
+Epoch 00051: val_loss did not improve from 0.64603
+Epoch 52/500
+47/47 - 1s - loss: 0.4033 - accuracy: 0.8473 - val_loss: 0.6586 - val_accuracy: 0.7581
+
+Epoch 00052: val_loss did not improve from 0.64603
+Epoch 53/500
+47/47 - 1s - loss: 0.4215 - accuracy: 0.8377 - val_loss: 0.6621 - val_accuracy: 0.7550
+
+Epoch 00053: val_loss did not improve from 0.64603
+Epoch 54/500
+47/47 - 1s - loss: 0.4108 - accuracy: 0.8430 - val_loss: 0.6516 - val_accuracy: 0.7631
+
+Epoch 00054: val_loss did not improve from 0.64603
+Epoch 55/500
+47/47 - 1s - loss: 0.3941 - accuracy: 0.8494 - val_loss: 0.6700 - val_accuracy: 0.7638
+
+Epoch 00055: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+
+Epoch 00055: val_loss did not improve from 0.64603
+Epoch 56/500
+47/47 - 1s - loss: 0.3666 - accuracy: 0.8634 - val_loss: 0.6065 - val_accuracy: 0.7812
+
+Epoch 00056: val_loss improved from 0.64603 to 0.60654, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 57/500
+47/47 - 1s - loss: 0.3620 - accuracy: 0.8665 - val_loss: 0.6173 - val_accuracy: 0.7718
+
+Epoch 00057: val_loss did not improve from 0.60654
+Epoch 58/500
+47/47 - 1s - loss: 0.3558 - accuracy: 0.8660 - val_loss: 0.6108 - val_accuracy: 0.7718
+
+Epoch 00058: val_loss did not improve from 0.60654
+Epoch 59/500
+47/47 - 1s - loss: 0.3466 - accuracy: 0.8662 - val_loss: 0.6087 - val_accuracy: 0.7681
+
+Epoch 00059: val_loss did not improve from 0.60654
+Epoch 60/500
+47/47 - 1s - loss: 0.3430 - accuracy: 0.8741 - val_loss: 0.6043 - val_accuracy: 0.7782
+
+Epoch 00060: val_loss improved from 0.60654 to 0.60426, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 61/500
+47/47 - 1s - loss: 0.3443 - accuracy: 0.8721 - val_loss: 0.6064 - val_accuracy: 0.7816
+
+Epoch 00061: val_loss did not improve from 0.60426
+Epoch 62/500
+47/47 - 1s - loss: 0.3362 - accuracy: 0.8754 - val_loss: 0.6066 - val_accuracy: 0.7755
+
+Epoch 00062: val_loss did not improve from 0.60426
+Epoch 63/500
+47/47 - 1s - loss: 0.3348 - accuracy: 0.8749 - val_loss: 0.6082 - val_accuracy: 0.7772
+
+Epoch 00063: val_loss did not improve from 0.60426
+Epoch 64/500
+47/47 - 1s - loss: 0.3325 - accuracy: 0.8749 - val_loss: 0.6134 - val_accuracy: 0.7762
+
+Epoch 00064: val_loss did not improve from 0.60426
+Epoch 65/500
+47/47 - 1s - loss: 0.3237 - accuracy: 0.8831 - val_loss: 0.6151 - val_accuracy: 0.7792
+
+Epoch 00065: val_loss did not improve from 0.60426
+Epoch 66/500
+47/47 - 1s - loss: 0.3263 - accuracy: 0.8807 - val_loss: 0.6137 - val_accuracy: 0.7752
+
+Epoch 00066: val_loss did not improve from 0.60426
+Epoch 67/500
+47/47 - 1s - loss: 0.3240 - accuracy: 0.8752 - val_loss: 0.6206 - val_accuracy: 0.7755
+
+Epoch 00067: val_loss did not improve from 0.60426
+Epoch 68/500
+47/47 - 1s - loss: 0.3271 - accuracy: 0.8778 - val_loss: 0.6161 - val_accuracy: 0.7722
+
+Epoch 00068: val_loss did not improve from 0.60426
+Epoch 69/500
+47/47 - 1s - loss: 0.3137 - accuracy: 0.8833 - val_loss: 0.6117 - val_accuracy: 0.7792
+
+Epoch 00069: val_loss did not improve from 0.60426
+Epoch 70/500
+47/47 - 1s - loss: 0.3158 - accuracy: 0.8815 - val_loss: 0.6161 - val_accuracy: 0.7769
+
+Epoch 00070: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+
+Epoch 00070: val_loss did not improve from 0.60426
+Epoch 71/500
+47/47 - 1s - loss: 0.2985 - accuracy: 0.8935 - val_loss: 0.6035 - val_accuracy: 0.7792
+
+Epoch 00071: val_loss improved from 0.60426 to 0.60351, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 72/500
+47/47 - 1s - loss: 0.2886 - accuracy: 0.8950 - val_loss: 0.6023 - val_accuracy: 0.7829
+
+Epoch 00072: val_loss improved from 0.60351 to 0.60229, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 73/500
+47/47 - 1s - loss: 0.2859 - accuracy: 0.8972 - val_loss: 0.6032 - val_accuracy: 0.7812
+
+Epoch 00073: val_loss did not improve from 0.60229
+Epoch 74/500
+47/47 - 1s - loss: 0.2930 - accuracy: 0.8921 - val_loss: 0.6085 - val_accuracy: 0.7786
+
+Epoch 00074: val_loss did not improve from 0.60229
+Epoch 75/500
+47/47 - 1s - loss: 0.2825 - accuracy: 0.8952 - val_loss: 0.6038 - val_accuracy: 0.7799
+
+Epoch 00075: val_loss did not improve from 0.60229
+Epoch 76/500
+47/47 - 1s - loss: 0.2832 - accuracy: 0.8966 - val_loss: 0.6082 - val_accuracy: 0.7802
+
+Epoch 00076: val_loss did not improve from 0.60229
+Epoch 77/500
+47/47 - 1s - loss: 0.2830 - accuracy: 0.8963 - val_loss: 0.6021 - val_accuracy: 0.7849
+
+Epoch 00077: val_loss improved from 0.60229 to 0.60213, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 78/500
+47/47 - 1s - loss: 0.2777 - accuracy: 0.8963 - val_loss: 0.6002 - val_accuracy: 0.7843
+
+Epoch 00078: val_loss improved from 0.60213 to 0.60024, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 79/500
+47/47 - 1s - loss: 0.2757 - accuracy: 0.8962 - val_loss: 0.6054 - val_accuracy: 0.7849
+
+Epoch 00079: val_loss did not improve from 0.60024
+Epoch 80/500
+47/47 - 1s - loss: 0.2894 - accuracy: 0.8942 - val_loss: 0.6064 - val_accuracy: 0.7816
+
+Epoch 00080: val_loss did not improve from 0.60024
+Epoch 81/500
+47/47 - 1s - loss: 0.2843 - accuracy: 0.8956 - val_loss: 0.5990 - val_accuracy: 0.7876
+
+Epoch 00081: val_loss improved from 0.60024 to 0.59903, saving model to ./Models/MLP_NET_TF2.hdf5
+Epoch 82/500
+47/47 - 1s - loss: 0.2771 - accuracy: 0.8961 - val_loss: 0.6074 - val_accuracy: 0.7796
+
+Epoch 00082: val_loss did not improve from 0.59903
+Epoch 83/500
+47/47 - 1s - loss: 0.2814 - accuracy: 0.8964 - val_loss: 0.6093 - val_accuracy: 0.7789
+
+Epoch 00083: val_loss did not improve from 0.59903
+Epoch 84/500
+47/47 - 1s - loss: 0.2780 - accuracy: 0.8963 - val_loss: 0.6008 - val_accuracy: 0.7856
+
+Epoch 00084: val_loss did not improve from 0.59903
+Epoch 85/500
+47/47 - 1s - loss: 0.2790 - accuracy: 0.8993 - val_loss: 0.6019 - val_accuracy: 0.7829
+
+Epoch 00085: val_loss did not improve from 0.59903
+Epoch 86/500
+47/47 - 1s - loss: 0.2775 - accuracy: 0.8984 - val_loss: 0.6050 - val_accuracy: 0.7826
+
+Epoch 00086: val_loss did not improve from 0.59903
+Epoch 87/500
+47/47 - 1s - loss: 0.2736 - accuracy: 0.8999 - val_loss: 0.5998 - val_accuracy: 0.7826
+
+Epoch 00087: val_loss did not improve from 0.59903
+Epoch 88/500
+47/47 - 1s - loss: 0.2709 - accuracy: 0.8969 - val_loss: 0.6046 - val_accuracy: 0.7812
+
+Epoch 00088: val_loss did not improve from 0.59903
+Epoch 89/500
+47/47 - 1s - loss: 0.2698 - accuracy: 0.9004 - val_loss: 0.6091 - val_accuracy: 0.7836
+
+Epoch 00089: val_loss did not improve from 0.59903
+Epoch 90/500
+47/47 - 1s - loss: 0.2662 - accuracy: 0.9021 - val_loss: 0.6021 - val_accuracy: 0.7860
+
+Epoch 00090: val_loss did not improve from 0.59903
+Epoch 91/500
+47/47 - 1s - loss: 0.2646 - accuracy: 0.9049 - val_loss: 0.6067 - val_accuracy: 0.7829
+
+Epoch 00091: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+
+Epoch 00091: val_loss did not improve from 0.59903
+Epoch 92/500
+47/47 - 1s - loss: 0.2567 - accuracy: 0.9087 - val_loss: 0.6035 - val_accuracy: 0.7829
+
+Epoch 00092: val_loss did not improve from 0.59903
+Epoch 93/500
+47/47 - 1s - loss: 0.2623 - accuracy: 0.9042 - val_loss: 0.6033 - val_accuracy: 0.7802
+
+Epoch 00093: val_loss did not improve from 0.59903
+Epoch 94/500
+47/47 - 1s - loss: 0.2592 - accuracy: 0.9005 - val_loss: 0.6030 - val_accuracy: 0.7853
+
+Epoch 00094: val_loss did not improve from 0.59903
+Epoch 95/500
+47/47 - 1s - loss: 0.2536 - accuracy: 0.9060 - val_loss: 0.6059 - val_accuracy: 0.7836
+
+Epoch 00095: val_loss did not improve from 0.59903
+Epoch 96/500
+47/47 - 1s - loss: 0.2542 - accuracy: 0.9074 - val_loss: 0.6063 - val_accuracy: 0.7829
+
+Epoch 00096: val_loss did not improve from 0.59903
+Epoch 97/500
+47/47 - 1s - loss: 0.2493 - accuracy: 0.9118 - val_loss: 0.6044 - val_accuracy: 0.7829
+
+Epoch 00097: val_loss did not improve from 0.59903
+Epoch 98/500
+47/47 - 1s - loss: 0.2502 - accuracy: 0.9067 - val_loss: 0.6102 - val_accuracy: 0.7836
+
+Epoch 00098: val_loss did not improve from 0.59903
+Epoch 99/500
+47/47 - 1s - loss: 0.2473 - accuracy: 0.9109 - val_loss: 0.6061 - val_accuracy: 0.7812
+
+Epoch 00099: val_loss did not improve from 0.59903
+Epoch 100/500
+47/47 - 1s - loss: 0.2473 - accuracy: 0.9098 - val_loss: 0.6062 - val_accuracy: 0.7846
+
+Epoch 00100: val_loss did not improve from 0.59903
+Epoch 101/500
+47/47 - 1s - loss: 0.2535 - accuracy: 0.9060 - val_loss: 0.6053 - val_accuracy: 0.7826
+
+Epoch 00101: ReduceLROnPlateau reducing learning rate to 6.25000029685907e-05.
+
+Epoch 00101: val_loss did not improve from 0.59903
+Epoch 102/500
+47/47 - 1s - loss: 0.2484 - accuracy: 0.9105 - val_loss: 0.6043 - val_accuracy: 0.7826
+
+Epoch 00102: val_loss did not improve from 0.59903
+Epoch 103/500
+47/47 - 1s - loss: 0.2461 - accuracy: 0.9104 - val_loss: 0.6055 - val_accuracy: 0.7843
+
+Epoch 00103: val_loss did not improve from 0.59903
+Epoch 104/500
+47/47 - 1s - loss: 0.2446 - accuracy: 0.9075 - val_loss: 0.6059 - val_accuracy: 0.7863
+
+Epoch 00104: val_loss did not improve from 0.59903
+Epoch 105/500
+47/47 - 1s - loss: 0.2485 - accuracy: 0.9046 - val_loss: 0.6081 - val_accuracy: 0.7846
+
+Epoch 00105: val_loss did not improve from 0.59903
+Epoch 106/500
+47/47 - 1s - loss: 0.2321 - accuracy: 0.9157 - val_loss: 0.6051 - val_accuracy: 0.7853
+
+Epoch 00106: val_loss did not improve from 0.59903
+Epoch 107/500
+47/47 - 1s - loss: 0.2460 - accuracy: 0.9094 - val_loss: 0.6051 - val_accuracy: 0.7853
+
+Epoch 00107: val_loss did not improve from 0.59903
+Epoch 108/500
+47/47 - 1s - loss: 0.2399 - accuracy: 0.9134 - val_loss: 0.6075 - val_accuracy: 0.7833
+
+Epoch 00108: val_loss did not improve from 0.59903
+Epoch 109/500
+47/47 - 1s - loss: 0.2400 - accuracy: 0.9125 - val_loss: 0.6090 - val_accuracy: 0.7843
+
+Epoch 00109: val_loss did not improve from 0.59903
+Epoch 110/500
+47/47 - 1s - loss: 0.2415 - accuracy: 0.9120 - val_loss: 0.6086 - val_accuracy: 0.7856
+
+Epoch 00110: val_loss did not improve from 0.59903
+Epoch 111/500
+47/47 - 1s - loss: 0.2394 - accuracy: 0.9125 - val_loss: 0.6064 - val_accuracy: 0.7863
+
+Epoch 00111: ReduceLROnPlateau reducing learning rate to 3.125000148429535e-05.
+
+Epoch 00111: val_loss did not improve from 0.59903
+Epoch 112/500
+47/47 - 1s - loss: 0.2446 - accuracy: 0.9123 - val_loss: 0.6051 - val_accuracy: 0.7873
+
+Epoch 00112: val_loss did not improve from 0.59903
+Epoch 113/500
+47/47 - 1s - loss: 0.2466 - accuracy: 0.9116 - val_loss: 0.6071 - val_accuracy: 0.7846
+
+Epoch 00113: val_loss did not improve from 0.59903
+Epoch 114/500
+47/47 - 1s - loss: 0.2425 - accuracy: 0.9142 - val_loss: 0.6078 - val_accuracy: 0.7839
+
+Epoch 00114: val_loss did not improve from 0.59903
+Epoch 115/500
+47/47 - 1s - loss: 0.2365 - accuracy: 0.9157 - val_loss: 0.6089 - val_accuracy: 0.7846
+
+Epoch 00115: val_loss did not improve from 0.59903
+Epoch 116/500
+47/47 - 1s - loss: 0.2425 - accuracy: 0.9130 - val_loss: 0.6085 - val_accuracy: 0.7846
+
+Epoch 00116: val_loss did not improve from 0.59903
+Epoch 117/500
+47/47 - 1s - loss: 0.2410 - accuracy: 0.9130 - val_loss: 0.6094 - val_accuracy: 0.7866
+
+Epoch 00117: val_loss did not improve from 0.59903
+Epoch 118/500
+47/47 - 1s - loss: 0.2428 - accuracy: 0.9117 - val_loss: 0.6090 - val_accuracy: 0.7833
+
+Epoch 00118: val_loss did not improve from 0.59903
+Epoch 119/500
+47/47 - 1s - loss: 0.2381 - accuracy: 0.9136 - val_loss: 0.6096 - val_accuracy: 0.7836
+
+Epoch 00119: val_loss did not improve from 0.59903
+Epoch 120/500
+47/47 - 1s - loss: 0.2300 - accuracy: 0.9168 - val_loss: 0.6084 - val_accuracy: 0.7873
+
+Epoch 00120: val_loss did not improve from 0.59903
+Epoch 121/500
+47/47 - 1s - loss: 0.2421 - accuracy: 0.9148 - val_loss: 0.6087 - val_accuracy: 0.7860
+
+Epoch 00121: ReduceLROnPlateau reducing learning rate to 1.5625000742147677e-05.
+
+Epoch 00121: val_loss did not improve from 0.59903
+Epoch 122/500
+47/47 - 1s - loss: 0.2478 - accuracy: 0.9109 - val_loss: 0.6083 - val_accuracy: 0.7873
+
+Epoch 00122: val_loss did not improve from 0.59903
+Epoch 123/500
+47/47 - 1s - loss: 0.2288 - accuracy: 0.9172 - val_loss: 0.6083 - val_accuracy: 0.7873
+
+Epoch 00123: val_loss did not improve from 0.59903
+Epoch 124/500
+47/47 - 1s - loss: 0.2326 - accuracy: 0.9155 - val_loss: 0.6087 - val_accuracy: 0.7846
+
+Epoch 00124: val_loss did not improve from 0.59903
+Epoch 125/500
+47/47 - 1s - loss: 0.2260 - accuracy: 0.9189 - val_loss: 0.6087 - val_accuracy: 0.7846
+
+Epoch 00125: val_loss did not improve from 0.59903
+Epoch 126/500
+47/47 - 1s - loss: 0.2400 - accuracy: 0.9147 - val_loss: 0.6092 - val_accuracy: 0.7846
+
+Epoch 00126: val_loss did not improve from 0.59903
+Epoch 127/500
+47/47 - 1s - loss: 0.2364 - accuracy: 0.9172 - val_loss: 0.6089 - val_accuracy: 0.7866
+
+Epoch 00127: val_loss did not improve from 0.59903
+Epoch 128/500
+47/47 - 1s - loss: 0.2401 - accuracy: 0.9134 - val_loss: 0.6094 - val_accuracy: 0.7856
+
+Epoch 00128: val_loss did not improve from 0.59903
+Epoch 129/500
+47/47 - 1s - loss: 0.2383 - accuracy: 0.9128 - val_loss: 0.6084 - val_accuracy: 0.7839
+
+Epoch 00129: val_loss did not improve from 0.59903
+Epoch 130/500
+47/47 - 1s - loss: 0.2301 - accuracy: 0.9158 - val_loss: 0.6083 - val_accuracy: 0.7849
+
+Epoch 00130: val_loss did not improve from 0.59903
+Epoch 131/500
+47/47 - 1s - loss: 0.2341 - accuracy: 0.9165 - val_loss: 0.6082 - val_accuracy: 0.7860
+
+Epoch 00131: ReduceLROnPlateau reducing learning rate to 7.812500371073838e-06.
+Restoring model weights from the end of the best epoch.
+
+Epoch 00131: val_loss did not improve from 0.59903
+Epoch 00131: early stopping
+
+Fold: 3
+Model: "MLP_NET_TF"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_4 (InputLayer)         [(None, 100, 3)]          0         
+_________________________________________________________________
+flatten_3 (Flatten)          (None, 300)               0         
+_________________________________________________________________
+dense_9 (Dense)              (None, 256)               77056     
+_________________________________________________________________
+batch_normalization_6 (Batch (None, 256)               1024      
+_________________________________________________________________
+dropout_6 (Dropout)          (None, 256)               0         
+_________________________________________________________________
+dense_10 (Dense)             (None, 128)               32896     
+_________________________________________________________________
+batch_normalization_7 (Batch (None, 128)               512       
+_________________________________________________________________
+dropout_7 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_11 (Dense)             (None, 6)                 774       
+=================================================================
+Total params: 112,262
+Trainable params: 111,494
+Non-trainable params: 768
+_________________________________________________________________
+None
+Epoch 1/500
+47/47 - 4s - loss: 1.7340 - accuracy: 0.4338 - val_loss: 1.6827 - val_accuracy: 0.4259
+
+Epoch 00001: val_loss improved from inf to 1.68271, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 2/500
+47/47 - 1s - loss: 1.2723 - accuracy: 0.5404 - val_loss: 1.3133 - val_accuracy: 0.5271
+
+Epoch 00002: val_loss improved from 1.68271 to 1.31328, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 3/500
+47/47 - 1s - loss: 1.1326 - accuracy: 0.5668 - val_loss: 1.1088 - val_accuracy: 0.6182
+
+Epoch 00003: val_loss improved from 1.31328 to 1.10877, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 4/500
+47/47 - 1s - loss: 1.0463 - accuracy: 0.5871 - val_loss: 1.0037 - val_accuracy: 0.6202
+
+Epoch 00004: val_loss improved from 1.10877 to 1.00374, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 5/500
+47/47 - 1s - loss: 0.9859 - accuracy: 0.6052 - val_loss: 0.9430 - val_accuracy: 0.6245
+
+Epoch 00005: val_loss improved from 1.00374 to 0.94296, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 6/500
+47/47 - 1s - loss: 0.9416 - accuracy: 0.6283 - val_loss: 0.9213 - val_accuracy: 0.6255
+
+Epoch 00006: val_loss improved from 0.94296 to 0.92130, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 7/500
+47/47 - 1s - loss: 0.9045 - accuracy: 0.6284 - val_loss: 0.8959 - val_accuracy: 0.6376
+
+Epoch 00007: val_loss improved from 0.92130 to 0.89591, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 8/500
+47/47 - 1s - loss: 0.8674 - accuracy: 0.6468 - val_loss: 0.8715 - val_accuracy: 0.6461
+
+Epoch 00008: val_loss improved from 0.89591 to 0.87150, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 9/500
+47/47 - 1s - loss: 0.8387 - accuracy: 0.6634 - val_loss: 0.8677 - val_accuracy: 0.6444
+
+Epoch 00009: val_loss improved from 0.87150 to 0.86768, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 10/500
+47/47 - 1s - loss: 0.8173 - accuracy: 0.6629 - val_loss: 0.8415 - val_accuracy: 0.6508
+
+Epoch 00010: val_loss improved from 0.86768 to 0.84152, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 11/500
+47/47 - 1s - loss: 0.7850 - accuracy: 0.6707 - val_loss: 0.8284 - val_accuracy: 0.6582
+
+Epoch 00011: val_loss improved from 0.84152 to 0.82839, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 12/500
+47/47 - 1s - loss: 0.7706 - accuracy: 0.6851 - val_loss: 0.8139 - val_accuracy: 0.6625
+
+Epoch 00012: val_loss improved from 0.82839 to 0.81388, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 13/500
+47/47 - 1s - loss: 0.7664 - accuracy: 0.6881 - val_loss: 0.8223 - val_accuracy: 0.6592
+
+Epoch 00013: val_loss did not improve from 0.81388
+Epoch 14/500
+47/47 - 1s - loss: 0.7389 - accuracy: 0.6982 - val_loss: 0.8159 - val_accuracy: 0.6602
+
+Epoch 00014: val_loss did not improve from 0.81388
+Epoch 15/500
+47/47 - 1s - loss: 0.7199 - accuracy: 0.7138 - val_loss: 0.7919 - val_accuracy: 0.6676
+
+Epoch 00015: val_loss improved from 0.81388 to 0.79186, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 16/500
+47/47 - 1s - loss: 0.7048 - accuracy: 0.7123 - val_loss: 0.7813 - val_accuracy: 0.6773
+
+Epoch 00016: val_loss improved from 0.79186 to 0.78127, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 17/500
+47/47 - 1s - loss: 0.6836 - accuracy: 0.7249 - val_loss: 0.7919 - val_accuracy: 0.6729
+
+Epoch 00017: val_loss did not improve from 0.78127
+Epoch 18/500
+47/47 - 1s - loss: 0.6787 - accuracy: 0.7253 - val_loss: 0.8105 - val_accuracy: 0.6763
+
+Epoch 00018: val_loss did not improve from 0.78127
+Epoch 19/500
+47/47 - 1s - loss: 0.6691 - accuracy: 0.7285 - val_loss: 0.7751 - val_accuracy: 0.6840
+
+Epoch 00019: val_loss improved from 0.78127 to 0.77509, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 20/500
+47/47 - 1s - loss: 0.6535 - accuracy: 0.7410 - val_loss: 0.7870 - val_accuracy: 0.6887
+
+Epoch 00020: val_loss did not improve from 0.77509
+Epoch 21/500
+47/47 - 1s - loss: 0.6476 - accuracy: 0.7418 - val_loss: 0.7528 - val_accuracy: 0.6894
+
+Epoch 00021: val_loss improved from 0.77509 to 0.75284, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 22/500
+47/47 - 1s - loss: 0.6230 - accuracy: 0.7498 - val_loss: 0.7686 - val_accuracy: 0.6988
+
+Epoch 00022: val_loss did not improve from 0.75284
+Epoch 23/500
+47/47 - 1s - loss: 0.6087 - accuracy: 0.7615 - val_loss: 0.7389 - val_accuracy: 0.6968
+
+Epoch 00023: val_loss improved from 0.75284 to 0.73889, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 24/500
+47/47 - 1s - loss: 0.6029 - accuracy: 0.7643 - val_loss: 0.7329 - val_accuracy: 0.7113
+
+Epoch 00024: val_loss improved from 0.73889 to 0.73287, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 25/500
+47/47 - 1s - loss: 0.6013 - accuracy: 0.7630 - val_loss: 0.7709 - val_accuracy: 0.6894
+
+Epoch 00025: val_loss did not improve from 0.73287
+Epoch 26/500
+47/47 - 1s - loss: 0.5945 - accuracy: 0.7647 - val_loss: 0.7479 - val_accuracy: 0.7032
+
+Epoch 00026: val_loss did not improve from 0.73287
+Epoch 27/500
+47/47 - 1s - loss: 0.5877 - accuracy: 0.7730 - val_loss: 0.7232 - val_accuracy: 0.7166
+
+Epoch 00027: val_loss improved from 0.73287 to 0.72319, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 28/500
+47/47 - 1s - loss: 0.5514 - accuracy: 0.7824 - val_loss: 0.7295 - val_accuracy: 0.7086
+
+Epoch 00028: val_loss did not improve from 0.72319
+Epoch 29/500
+47/47 - 1s - loss: 0.5518 - accuracy: 0.7801 - val_loss: 0.7208 - val_accuracy: 0.7220
+
+Epoch 00029: val_loss improved from 0.72319 to 0.72079, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 30/500
+47/47 - 1s - loss: 0.5560 - accuracy: 0.7777 - val_loss: 0.7252 - val_accuracy: 0.7106
+
+Epoch 00030: val_loss did not improve from 0.72079
+Epoch 31/500
+47/47 - 1s - loss: 0.5417 - accuracy: 0.7901 - val_loss: 0.7447 - val_accuracy: 0.7119
+
+Epoch 00031: val_loss did not improve from 0.72079
+Epoch 32/500
+47/47 - 1s - loss: 0.5305 - accuracy: 0.7891 - val_loss: 0.7344 - val_accuracy: 0.7237
+
+Epoch 00032: val_loss did not improve from 0.72079
+Epoch 33/500
+47/47 - 1s - loss: 0.5139 - accuracy: 0.7987 - val_loss: 0.7274 - val_accuracy: 0.7197
+
+Epoch 00033: val_loss did not improve from 0.72079
+Epoch 34/500
+47/47 - 1s - loss: 0.5115 - accuracy: 0.7996 - val_loss: 0.7082 - val_accuracy: 0.7284
+
+Epoch 00034: val_loss improved from 0.72079 to 0.70816, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 35/500
+47/47 - 1s - loss: 0.5018 - accuracy: 0.8073 - val_loss: 0.7022 - val_accuracy: 0.7274
+
+Epoch 00035: val_loss improved from 0.70816 to 0.70216, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 36/500
+47/47 - 1s - loss: 0.4888 - accuracy: 0.8119 - val_loss: 0.7127 - val_accuracy: 0.7210
+
+Epoch 00036: val_loss did not improve from 0.70216
+Epoch 37/500
+47/47 - 1s - loss: 0.4907 - accuracy: 0.8095 - val_loss: 0.7261 - val_accuracy: 0.7271
+
+Epoch 00037: val_loss did not improve from 0.70216
+Epoch 38/500
+47/47 - 1s - loss: 0.4826 - accuracy: 0.8132 - val_loss: 0.7019 - val_accuracy: 0.7318
+
+Epoch 00038: val_loss improved from 0.70216 to 0.70194, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 39/500
+47/47 - 1s - loss: 0.4773 - accuracy: 0.8114 - val_loss: 0.6859 - val_accuracy: 0.7408
+
+Epoch 00039: val_loss improved from 0.70194 to 0.68587, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 40/500
+47/47 - 1s - loss: 0.4718 - accuracy: 0.8168 - val_loss: 0.6965 - val_accuracy: 0.7382
+
+Epoch 00040: val_loss did not improve from 0.68587
+Epoch 41/500
+47/47 - 1s - loss: 0.4829 - accuracy: 0.8153 - val_loss: 0.6752 - val_accuracy: 0.7408
+
+Epoch 00041: val_loss improved from 0.68587 to 0.67522, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 42/500
+47/47 - 1s - loss: 0.4610 - accuracy: 0.8271 - val_loss: 0.7125 - val_accuracy: 0.7398
+
+Epoch 00042: val_loss did not improve from 0.67522
+Epoch 43/500
+47/47 - 1s - loss: 0.4496 - accuracy: 0.8288 - val_loss: 0.7218 - val_accuracy: 0.7345
+
+Epoch 00043: val_loss did not improve from 0.67522
+Epoch 44/500
+47/47 - 1s - loss: 0.4544 - accuracy: 0.8228 - val_loss: 0.6749 - val_accuracy: 0.7412
+
+Epoch 00044: val_loss improved from 0.67522 to 0.67489, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 45/500
+47/47 - 1s - loss: 0.4373 - accuracy: 0.8316 - val_loss: 0.6965 - val_accuracy: 0.7385
+
+Epoch 00045: val_loss did not improve from 0.67489
+Epoch 46/500
+47/47 - 1s - loss: 0.4359 - accuracy: 0.8349 - val_loss: 0.6887 - val_accuracy: 0.7425
+
+Epoch 00046: val_loss did not improve from 0.67489
+Epoch 47/500
+47/47 - 1s - loss: 0.4316 - accuracy: 0.8327 - val_loss: 0.6709 - val_accuracy: 0.7385
+
+Epoch 00047: val_loss improved from 0.67489 to 0.67087, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 48/500
+47/47 - 1s - loss: 0.4253 - accuracy: 0.8402 - val_loss: 0.6760 - val_accuracy: 0.7308
+
+Epoch 00048: val_loss did not improve from 0.67087
+Epoch 49/500
+47/47 - 1s - loss: 0.4098 - accuracy: 0.8433 - val_loss: 0.7017 - val_accuracy: 0.7385
+
+Epoch 00049: val_loss did not improve from 0.67087
+Epoch 50/500
+47/47 - 1s - loss: 0.4232 - accuracy: 0.8414 - val_loss: 0.7142 - val_accuracy: 0.7405
+
+Epoch 00050: val_loss did not improve from 0.67087
+Epoch 51/500
+47/47 - 1s - loss: 0.4096 - accuracy: 0.8447 - val_loss: 0.6900 - val_accuracy: 0.7408
+
+Epoch 00051: val_loss did not improve from 0.67087
+Epoch 52/500
+47/47 - 1s - loss: 0.4111 - accuracy: 0.8467 - val_loss: 0.7036 - val_accuracy: 0.7355
+
+Epoch 00052: val_loss did not improve from 0.67087
+Epoch 53/500
+47/47 - 1s - loss: 0.4075 - accuracy: 0.8458 - val_loss: 0.6771 - val_accuracy: 0.7486
+
+Epoch 00053: val_loss did not improve from 0.67087
+Epoch 54/500
+47/47 - 1s - loss: 0.4058 - accuracy: 0.8483 - val_loss: 0.6927 - val_accuracy: 0.7509
+
+Epoch 00054: val_loss did not improve from 0.67087
+Epoch 55/500
+47/47 - 1s - loss: 0.4048 - accuracy: 0.8482 - val_loss: 0.6690 - val_accuracy: 0.7455
+
+Epoch 00055: val_loss improved from 0.67087 to 0.66896, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 56/500
+47/47 - 1s - loss: 0.3761 - accuracy: 0.8578 - val_loss: 0.6585 - val_accuracy: 0.7492
+
+Epoch 00056: val_loss improved from 0.66896 to 0.65855, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 57/500
+47/47 - 1s - loss: 0.3731 - accuracy: 0.8590 - val_loss: 0.6639 - val_accuracy: 0.7600
+
+Epoch 00057: val_loss did not improve from 0.65855
+Epoch 58/500
+47/47 - 1s - loss: 0.3802 - accuracy: 0.8582 - val_loss: 0.6580 - val_accuracy: 0.7576
+
+Epoch 00058: val_loss improved from 0.65855 to 0.65795, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 59/500
+47/47 - 1s - loss: 0.3715 - accuracy: 0.8607 - val_loss: 0.6813 - val_accuracy: 0.7550
+
+Epoch 00059: val_loss did not improve from 0.65795
+Epoch 60/500
+47/47 - 1s - loss: 0.3612 - accuracy: 0.8622 - val_loss: 0.6775 - val_accuracy: 0.7499
+
+Epoch 00060: val_loss did not improve from 0.65795
+Epoch 61/500
+47/47 - 1s - loss: 0.3591 - accuracy: 0.8626 - val_loss: 0.6674 - val_accuracy: 0.7570
+
+Epoch 00061: val_loss did not improve from 0.65795
+Epoch 62/500
+47/47 - 1s - loss: 0.3625 - accuracy: 0.8651 - val_loss: 0.6720 - val_accuracy: 0.7506
+
+Epoch 00062: val_loss did not improve from 0.65795
+Epoch 63/500
+47/47 - 1s - loss: 0.3625 - accuracy: 0.8628 - val_loss: 0.6992 - val_accuracy: 0.7482
+
+Epoch 00063: val_loss did not improve from 0.65795
+Epoch 64/500
+47/47 - 1s - loss: 0.3670 - accuracy: 0.8621 - val_loss: 0.6661 - val_accuracy: 0.7529
+
+Epoch 00064: val_loss did not improve from 0.65795
+Epoch 65/500
+47/47 - 1s - loss: 0.3619 - accuracy: 0.8689 - val_loss: 0.6642 - val_accuracy: 0.7583
+
+Epoch 00065: val_loss did not improve from 0.65795
+Epoch 66/500
+47/47 - 1s - loss: 0.3633 - accuracy: 0.8633 - val_loss: 0.6785 - val_accuracy: 0.7566
+
+Epoch 00066: val_loss did not improve from 0.65795
+Epoch 67/500
+47/47 - 1s - loss: 0.3573 - accuracy: 0.8668 - val_loss: 0.6684 - val_accuracy: 0.7576
+
+Epoch 00067: val_loss did not improve from 0.65795
+Epoch 68/500
+47/47 - 1s - loss: 0.3493 - accuracy: 0.8676 - val_loss: 0.6539 - val_accuracy: 0.7580
+
+Epoch 00068: val_loss improved from 0.65795 to 0.65392, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 69/500
+47/47 - 1s - loss: 0.3330 - accuracy: 0.8749 - val_loss: 0.6492 - val_accuracy: 0.7624
+
+Epoch 00069: val_loss improved from 0.65392 to 0.64918, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 70/500
+47/47 - 1s - loss: 0.3193 - accuracy: 0.8817 - val_loss: 0.6405 - val_accuracy: 0.7711
+
+Epoch 00070: val_loss improved from 0.64918 to 0.64053, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 71/500
+47/47 - 1s - loss: 0.3297 - accuracy: 0.8744 - val_loss: 0.6471 - val_accuracy: 0.7637
+
+Epoch 00071: val_loss did not improve from 0.64053
+Epoch 72/500
+47/47 - 1s - loss: 0.3290 - accuracy: 0.8749 - val_loss: 0.6425 - val_accuracy: 0.7607
+
+Epoch 00072: val_loss did not improve from 0.64053
+Epoch 73/500
+47/47 - 1s - loss: 0.3227 - accuracy: 0.8823 - val_loss: 0.6404 - val_accuracy: 0.7647
+
+Epoch 00073: val_loss improved from 0.64053 to 0.64038, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 74/500
+47/47 - 1s - loss: 0.3273 - accuracy: 0.8803 - val_loss: 0.6619 - val_accuracy: 0.7573
+
+Epoch 00074: val_loss did not improve from 0.64038
+Epoch 75/500
+47/47 - 1s - loss: 0.3238 - accuracy: 0.8842 - val_loss: 0.6412 - val_accuracy: 0.7613
+
+Epoch 00075: val_loss did not improve from 0.64038
+Epoch 76/500
+47/47 - 1s - loss: 0.3178 - accuracy: 0.8818 - val_loss: 0.6448 - val_accuracy: 0.7580
+
+Epoch 00076: val_loss did not improve from 0.64038
+Epoch 77/500
+47/47 - 1s - loss: 0.3110 - accuracy: 0.8857 - val_loss: 0.6522 - val_accuracy: 0.7681
+
+Epoch 00077: val_loss did not improve from 0.64038
+Epoch 78/500
+47/47 - 1s - loss: 0.3183 - accuracy: 0.8831 - val_loss: 0.6580 - val_accuracy: 0.7529
+
+Epoch 00078: val_loss did not improve from 0.64038
+Epoch 79/500
+47/47 - 1s - loss: 0.3016 - accuracy: 0.8893 - val_loss: 0.6566 - val_accuracy: 0.7627
+
+Epoch 00079: val_loss did not improve from 0.64038
+Epoch 80/500
+47/47 - 1s - loss: 0.3142 - accuracy: 0.8841 - val_loss: 0.6465 - val_accuracy: 0.7627
+
+Epoch 00080: val_loss did not improve from 0.64038
+Epoch 81/500
+47/47 - 1s - loss: 0.2923 - accuracy: 0.8936 - val_loss: 0.6452 - val_accuracy: 0.7718
+
+Epoch 00081: val_loss did not improve from 0.64038
+Epoch 82/500
+47/47 - 1s - loss: 0.3159 - accuracy: 0.8806 - val_loss: 0.6566 - val_accuracy: 0.7617
+
+Epoch 00082: val_loss did not improve from 0.64038
+Epoch 83/500
+47/47 - 1s - loss: 0.2935 - accuracy: 0.8902 - val_loss: 0.6458 - val_accuracy: 0.7667
+
+Epoch 00083: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+
+Epoch 00083: val_loss did not improve from 0.64038
+Epoch 84/500
+47/47 - 1s - loss: 0.2781 - accuracy: 0.8996 - val_loss: 0.6247 - val_accuracy: 0.7745
+
+Epoch 00084: val_loss improved from 0.64038 to 0.62472, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 85/500
+47/47 - 1s - loss: 0.2687 - accuracy: 0.9051 - val_loss: 0.6286 - val_accuracy: 0.7711
+
+Epoch 00085: val_loss did not improve from 0.62472
+Epoch 86/500
+47/47 - 1s - loss: 0.2616 - accuracy: 0.9046 - val_loss: 0.6229 - val_accuracy: 0.7731
+
+Epoch 00086: val_loss improved from 0.62472 to 0.62293, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 87/500
+47/47 - 1s - loss: 0.2580 - accuracy: 0.9059 - val_loss: 0.6224 - val_accuracy: 0.7775
+
+Epoch 00087: val_loss improved from 0.62293 to 0.62242, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 88/500
+47/47 - 1s - loss: 0.2443 - accuracy: 0.9111 - val_loss: 0.6203 - val_accuracy: 0.7822
+
+Epoch 00088: val_loss improved from 0.62242 to 0.62035, saving model to ./Models/MLP_NET_TF3.hdf5
+Epoch 89/500
+47/47 - 1s - loss: 0.2555 - accuracy: 0.9086 - val_loss: 0.6223 - val_accuracy: 0.7775
+
+Epoch 00089: val_loss did not improve from 0.62035
+Epoch 90/500
+47/47 - 1s - loss: 0.2357 - accuracy: 0.9152 - val_loss: 0.6256 - val_accuracy: 0.7798
+
+Epoch 00090: val_loss did not improve from 0.62035
+Epoch 91/500
+47/47 - 1s - loss: 0.2426 - accuracy: 0.9129 - val_loss: 0.6334 - val_accuracy: 0.7748
+
+Epoch 00091: val_loss did not improve from 0.62035
+Epoch 92/500
+47/47 - 1s - loss: 0.2444 - accuracy: 0.9115 - val_loss: 0.6260 - val_accuracy: 0.7795
+
+Epoch 00092: val_loss did not improve from 0.62035
+Epoch 93/500
+47/47 - 1s - loss: 0.2391 - accuracy: 0.9112 - val_loss: 0.6280 - val_accuracy: 0.7768
+
+Epoch 00093: val_loss did not improve from 0.62035
+Epoch 94/500
+47/47 - 1s - loss: 0.2318 - accuracy: 0.9142 - val_loss: 0.6397 - val_accuracy: 0.7694
+
+Epoch 00094: val_loss did not improve from 0.62035
+Epoch 95/500
+47/47 - 1s - loss: 0.2493 - accuracy: 0.9090 - val_loss: 0.6334 - val_accuracy: 0.7818
+
+Epoch 00095: val_loss did not improve from 0.62035
+Epoch 96/500
+47/47 - 1s - loss: 0.2299 - accuracy: 0.9191 - val_loss: 0.6352 - val_accuracy: 0.7778
+
+Epoch 00096: val_loss did not improve from 0.62035
+Epoch 97/500
+47/47 - 1s - loss: 0.2369 - accuracy: 0.9172 - val_loss: 0.6291 - val_accuracy: 0.7768
+
+Epoch 00097: val_loss did not improve from 0.62035
+Epoch 98/500
+47/47 - 1s - loss: 0.2254 - accuracy: 0.9197 - val_loss: 0.6345 - val_accuracy: 0.7849
+
+Epoch 00098: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+
+Epoch 00098: val_loss did not improve from 0.62035
+Epoch 99/500
+47/47 - 1s - loss: 0.2315 - accuracy: 0.9162 - val_loss: 0.6382 - val_accuracy: 0.7768
+
+Epoch 00099: val_loss did not improve from 0.62035
+Epoch 100/500
+47/47 - 1s - loss: 0.2223 - accuracy: 0.9208 - val_loss: 0.6296 - val_accuracy: 0.7795
+
+Epoch 00100: val_loss did not improve from 0.62035
+Epoch 101/500
+47/47 - 1s - loss: 0.2178 - accuracy: 0.9226 - val_loss: 0.6357 - val_accuracy: 0.7771
+
+Epoch 00101: val_loss did not improve from 0.62035
+Epoch 102/500
+47/47 - 1s - loss: 0.2130 - accuracy: 0.9236 - val_loss: 0.6422 - val_accuracy: 0.7697
+
+Epoch 00102: val_loss did not improve from 0.62035
+Epoch 103/500
+47/47 - 1s - loss: 0.2139 - accuracy: 0.9223 - val_loss: 0.6359 - val_accuracy: 0.7734
+
+Epoch 00103: val_loss did not improve from 0.62035
+Epoch 104/500
+47/47 - 1s - loss: 0.2169 - accuracy: 0.9225 - val_loss: 0.6427 - val_accuracy: 0.7758
+
+Epoch 00104: val_loss did not improve from 0.62035
+Epoch 105/500
+47/47 - 1s - loss: 0.2137 - accuracy: 0.9246 - val_loss: 0.6305 - val_accuracy: 0.7795
+
+Epoch 00105: val_loss did not improve from 0.62035
+Epoch 106/500
+47/47 - 1s - loss: 0.2073 - accuracy: 0.9266 - val_loss: 0.6363 - val_accuracy: 0.7755
+
+Epoch 00106: val_loss did not improve from 0.62035
+Epoch 107/500
+47/47 - 1s - loss: 0.2070 - accuracy: 0.9262 - val_loss: 0.6318 - val_accuracy: 0.7775
+
+Epoch 00107: val_loss did not improve from 0.62035
+Epoch 108/500
+47/47 - 1s - loss: 0.2047 - accuracy: 0.9283 - val_loss: 0.6395 - val_accuracy: 0.7761
+
+Epoch 00108: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+
+Epoch 00108: val_loss did not improve from 0.62035
+Epoch 109/500
+47/47 - 1s - loss: 0.1934 - accuracy: 0.9317 - val_loss: 0.6356 - val_accuracy: 0.7825
+
+Epoch 00109: val_loss did not improve from 0.62035
+Epoch 110/500
+47/47 - 1s - loss: 0.1953 - accuracy: 0.9297 - val_loss: 0.6359 - val_accuracy: 0.7842
+
+Epoch 00110: val_loss did not improve from 0.62035
+Epoch 111/500
+47/47 - 1s - loss: 0.1973 - accuracy: 0.9303 - val_loss: 0.6416 - val_accuracy: 0.7795
+
+Epoch 00111: val_loss did not improve from 0.62035
+Epoch 112/500
+47/47 - 1s - loss: 0.1955 - accuracy: 0.9306 - val_loss: 0.6421 - val_accuracy: 0.7778
+
+Epoch 00112: val_loss did not improve from 0.62035
+Epoch 113/500
+47/47 - 1s - loss: 0.1931 - accuracy: 0.9338 - val_loss: 0.6498 - val_accuracy: 0.7751
+
+Epoch 00113: val_loss did not improve from 0.62035
+Epoch 114/500
+47/47 - 1s - loss: 0.1911 - accuracy: 0.9300 - val_loss: 0.6448 - val_accuracy: 0.7795
+
+Epoch 00114: val_loss did not improve from 0.62035
+Epoch 115/500
+47/47 - 1s - loss: 0.2036 - accuracy: 0.9278 - val_loss: 0.6403 - val_accuracy: 0.7785
+
+Epoch 00115: val_loss did not improve from 0.62035
+Epoch 116/500
+47/47 - 1s - loss: 0.1910 - accuracy: 0.9332 - val_loss: 0.6479 - val_accuracy: 0.7755
+
+Epoch 00116: val_loss did not improve from 0.62035
+Epoch 117/500
+47/47 - 1s - loss: 0.1991 - accuracy: 0.9309 - val_loss: 0.6446 - val_accuracy: 0.7761
+
+Epoch 00117: val_loss did not improve from 0.62035
+Epoch 118/500
+47/47 - 1s - loss: 0.1920 - accuracy: 0.9301 - val_loss: 0.6427 - val_accuracy: 0.7761
+
+Epoch 00118: ReduceLROnPlateau reducing learning rate to 6.25000029685907e-05.
+
+Epoch 00118: val_loss did not improve from 0.62035
+Epoch 119/500
+47/47 - 1s - loss: 0.1878 - accuracy: 0.9329 - val_loss: 0.6426 - val_accuracy: 0.7775
+
+Epoch 00119: val_loss did not improve from 0.62035
+Epoch 120/500
+47/47 - 1s - loss: 0.1888 - accuracy: 0.9323 - val_loss: 0.6446 - val_accuracy: 0.7758
+
+Epoch 00120: val_loss did not improve from 0.62035
+Epoch 121/500
+47/47 - 1s - loss: 0.1858 - accuracy: 0.9338 - val_loss: 0.6457 - val_accuracy: 0.7748
+
+Epoch 00121: val_loss did not improve from 0.62035
+Epoch 122/500
+47/47 - 1s - loss: 0.1935 - accuracy: 0.9308 - val_loss: 0.6510 - val_accuracy: 0.7734
+
+Epoch 00122: val_loss did not improve from 0.62035
+Epoch 123/500
+47/47 - 1s - loss: 0.1926 - accuracy: 0.9311 - val_loss: 0.6490 - val_accuracy: 0.7724
+
+Epoch 00123: val_loss did not improve from 0.62035
+Epoch 124/500
+47/47 - 1s - loss: 0.1839 - accuracy: 0.9346 - val_loss: 0.6479 - val_accuracy: 0.7738
+
+Epoch 00124: val_loss did not improve from 0.62035
+Epoch 125/500
+47/47 - 1s - loss: 0.1845 - accuracy: 0.9354 - val_loss: 0.6467 - val_accuracy: 0.7758
+
+Epoch 00125: val_loss did not improve from 0.62035
+Epoch 126/500
+47/47 - 1s - loss: 0.1823 - accuracy: 0.9362 - val_loss: 0.6482 - val_accuracy: 0.7765
+
+Epoch 00126: val_loss did not improve from 0.62035
+Epoch 127/500
+47/47 - 1s - loss: 0.1882 - accuracy: 0.9348 - val_loss: 0.6456 - val_accuracy: 0.7758
+
+Epoch 00127: val_loss did not improve from 0.62035
+Epoch 128/500
+47/47 - 1s - loss: 0.1902 - accuracy: 0.9304 - val_loss: 0.6467 - val_accuracy: 0.7745
+
+Epoch 00128: ReduceLROnPlateau reducing learning rate to 3.125000148429535e-05.
+
+Epoch 00128: val_loss did not improve from 0.62035
+Epoch 129/500
+47/47 - 1s - loss: 0.1823 - accuracy: 0.9360 - val_loss: 0.6467 - val_accuracy: 0.7748
+
+Epoch 00129: val_loss did not improve from 0.62035
+Epoch 130/500
+47/47 - 1s - loss: 0.1867 - accuracy: 0.9328 - val_loss: 0.6465 - val_accuracy: 0.7745
+
+Epoch 00130: val_loss did not improve from 0.62035
+Epoch 131/500
+47/47 - 1s - loss: 0.1890 - accuracy: 0.9330 - val_loss: 0.6466 - val_accuracy: 0.7745
+
+Epoch 00131: val_loss did not improve from 0.62035
+Epoch 132/500
+47/47 - 1s - loss: 0.1842 - accuracy: 0.9345 - val_loss: 0.6466 - val_accuracy: 0.7751
+
+Epoch 00132: val_loss did not improve from 0.62035
+Epoch 133/500
+47/47 - 1s - loss: 0.1848 - accuracy: 0.9333 - val_loss: 0.6465 - val_accuracy: 0.7745
+
+Epoch 00133: val_loss did not improve from 0.62035
+Epoch 134/500
+47/47 - 1s - loss: 0.1750 - accuracy: 0.9406 - val_loss: 0.6498 - val_accuracy: 0.7745
+
+Epoch 00134: val_loss did not improve from 0.62035
+Epoch 135/500
+47/47 - 1s - loss: 0.1836 - accuracy: 0.9349 - val_loss: 0.6482 - val_accuracy: 0.7755
+
+Epoch 00135: val_loss did not improve from 0.62035
+Epoch 136/500
+47/47 - 1s - loss: 0.1924 - accuracy: 0.9312 - val_loss: 0.6497 - val_accuracy: 0.7748
+
+Epoch 00136: val_loss did not improve from 0.62035
+Epoch 137/500
+47/47 - 1s - loss: 0.1844 - accuracy: 0.9349 - val_loss: 0.6494 - val_accuracy: 0.7758
+
+Epoch 00137: val_loss did not improve from 0.62035
+Epoch 138/500
+47/47 - 1s - loss: 0.1781 - accuracy: 0.9338 - val_loss: 0.6469 - val_accuracy: 0.7795
+
+Epoch 00138: ReduceLROnPlateau reducing learning rate to 1.5625000742147677e-05.
+Restoring model weights from the end of the best epoch.
+
+Epoch 00138: val_loss did not improve from 0.62035
+Epoch 00138: early stopping
+
+Fold: 4
+Model: "MLP_NET_TF"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_5 (InputLayer)         [(None, 100, 3)]          0         
+_________________________________________________________________
+flatten_4 (Flatten)          (None, 300)               0         
+_________________________________________________________________
+dense_12 (Dense)             (None, 256)               77056     
+_________________________________________________________________
+batch_normalization_8 (Batch (None, 256)               1024      
+_________________________________________________________________
+dropout_8 (Dropout)          (None, 256)               0         
+_________________________________________________________________
+dense_13 (Dense)             (None, 128)               32896     
+_________________________________________________________________
+batch_normalization_9 (Batch (None, 128)               512       
+_________________________________________________________________
+dropout_9 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_14 (Dense)             (None, 6)                 774       
+=================================================================
+Total params: 112,262
+Trainable params: 111,494
+Non-trainable params: 768
+_________________________________________________________________
+None
+Epoch 1/500
+47/47 - 4s - loss: 1.7213 - accuracy: 0.4378 - val_loss: 1.7770 - val_accuracy: 0.4050
+
+Epoch 00001: val_loss improved from inf to 1.77700, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 2/500
+47/47 - 1s - loss: 1.2742 - accuracy: 0.5346 - val_loss: 1.3154 - val_accuracy: 0.5301
+
+Epoch 00002: val_loss improved from 1.77700 to 1.31535, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 3/500
+47/47 - 1s - loss: 1.1551 - accuracy: 0.5657 - val_loss: 1.0918 - val_accuracy: 0.6054
+
+Epoch 00003: val_loss improved from 1.31535 to 1.09181, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 4/500
+47/47 - 1s - loss: 1.0567 - accuracy: 0.5904 - val_loss: 0.9814 - val_accuracy: 0.6161
+
+Epoch 00004: val_loss improved from 1.09181 to 0.98145, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 5/500
+47/47 - 1s - loss: 0.9980 - accuracy: 0.6064 - val_loss: 0.9216 - val_accuracy: 0.6289
+
+Epoch 00005: val_loss improved from 0.98145 to 0.92160, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 6/500
+47/47 - 1s - loss: 0.9533 - accuracy: 0.6209 - val_loss: 0.8921 - val_accuracy: 0.6292
+
+Epoch 00006: val_loss improved from 0.92160 to 0.89207, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 7/500
+47/47 - 1s - loss: 0.9091 - accuracy: 0.6340 - val_loss: 0.8769 - val_accuracy: 0.6373
+
+Epoch 00007: val_loss improved from 0.89207 to 0.87689, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 8/500
+47/47 - 1s - loss: 0.8614 - accuracy: 0.6508 - val_loss: 0.8592 - val_accuracy: 0.6471
+
+Epoch 00008: val_loss improved from 0.87689 to 0.85918, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 9/500
+47/47 - 1s - loss: 0.8433 - accuracy: 0.6626 - val_loss: 0.8592 - val_accuracy: 0.6467
+
+Epoch 00009: val_loss did not improve from 0.85918
+Epoch 10/500
+47/47 - 1s - loss: 0.8022 - accuracy: 0.6761 - val_loss: 0.8289 - val_accuracy: 0.6474
+
+Epoch 00010: val_loss improved from 0.85918 to 0.82891, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 11/500
+47/47 - 1s - loss: 0.8073 - accuracy: 0.6768 - val_loss: 0.8205 - val_accuracy: 0.6551
+
+Epoch 00011: val_loss improved from 0.82891 to 0.82054, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 12/500
+47/47 - 1s - loss: 0.7788 - accuracy: 0.6865 - val_loss: 0.8103 - val_accuracy: 0.6615
+
+Epoch 00012: val_loss improved from 0.82054 to 0.81029, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 13/500
+47/47 - 1s - loss: 0.7502 - accuracy: 0.6980 - val_loss: 0.8035 - val_accuracy: 0.6649
+
+Epoch 00013: val_loss improved from 0.81029 to 0.80354, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 14/500
+47/47 - 1s - loss: 0.7496 - accuracy: 0.6968 - val_loss: 0.7998 - val_accuracy: 0.6686
+
+Epoch 00014: val_loss improved from 0.80354 to 0.79980, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 15/500
+47/47 - 1s - loss: 0.7246 - accuracy: 0.7094 - val_loss: 0.7880 - val_accuracy: 0.6659
+
+Epoch 00015: val_loss improved from 0.79980 to 0.78798, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 16/500
+47/47 - 1s - loss: 0.7153 - accuracy: 0.7156 - val_loss: 0.7892 - val_accuracy: 0.6776
+
+Epoch 00016: val_loss did not improve from 0.78798
+Epoch 17/500
+47/47 - 1s - loss: 0.7050 - accuracy: 0.7160 - val_loss: 0.7753 - val_accuracy: 0.6763
+
+Epoch 00017: val_loss improved from 0.78798 to 0.77526, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 18/500
+47/47 - 1s - loss: 0.6887 - accuracy: 0.7272 - val_loss: 0.7860 - val_accuracy: 0.6881
+
+Epoch 00018: val_loss did not improve from 0.77526
+Epoch 19/500
+47/47 - 1s - loss: 0.6706 - accuracy: 0.7322 - val_loss: 0.7678 - val_accuracy: 0.6824
+
+Epoch 00019: val_loss improved from 0.77526 to 0.76779, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 20/500
+47/47 - 1s - loss: 0.6624 - accuracy: 0.7340 - val_loss: 0.7782 - val_accuracy: 0.6931
+
+Epoch 00020: val_loss did not improve from 0.76779
+Epoch 21/500
+47/47 - 1s - loss: 0.6468 - accuracy: 0.7419 - val_loss: 0.7703 - val_accuracy: 0.6881
+
+Epoch 00021: val_loss did not improve from 0.76779
+Epoch 22/500
+47/47 - 1s - loss: 0.6386 - accuracy: 0.7475 - val_loss: 0.7545 - val_accuracy: 0.6901
+
+Epoch 00022: val_loss improved from 0.76779 to 0.75450, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 23/500
+47/47 - 1s - loss: 0.6312 - accuracy: 0.7512 - val_loss: 0.7449 - val_accuracy: 0.6971
+
+Epoch 00023: val_loss improved from 0.75450 to 0.74493, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 24/500
+47/47 - 1s - loss: 0.6048 - accuracy: 0.7593 - val_loss: 0.7543 - val_accuracy: 0.7042
+
+Epoch 00024: val_loss did not improve from 0.74493
+Epoch 25/500
+47/47 - 1s - loss: 0.6005 - accuracy: 0.7638 - val_loss: 0.7472 - val_accuracy: 0.7052
+
+Epoch 00025: val_loss did not improve from 0.74493
+Epoch 26/500
+47/47 - 1s - loss: 0.5935 - accuracy: 0.7696 - val_loss: 0.7289 - val_accuracy: 0.7089
+
+Epoch 00026: val_loss improved from 0.74493 to 0.72889, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 27/500
+47/47 - 1s - loss: 0.5814 - accuracy: 0.7692 - val_loss: 0.7278 - val_accuracy: 0.7076
+
+Epoch 00027: val_loss improved from 0.72889 to 0.72784, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 28/500
+47/47 - 1s - loss: 0.5827 - accuracy: 0.7681 - val_loss: 0.7146 - val_accuracy: 0.7193
+
+Epoch 00028: val_loss improved from 0.72784 to 0.71463, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 29/500
+47/47 - 1s - loss: 0.5591 - accuracy: 0.7846 - val_loss: 0.7174 - val_accuracy: 0.7176
+
+Epoch 00029: val_loss did not improve from 0.71463
+Epoch 30/500
+47/47 - 1s - loss: 0.5533 - accuracy: 0.7873 - val_loss: 0.7309 - val_accuracy: 0.7187
+
+Epoch 00030: val_loss did not improve from 0.71463
+Epoch 31/500
+47/47 - 1s - loss: 0.5531 - accuracy: 0.7846 - val_loss: 0.7364 - val_accuracy: 0.7197
+
+Epoch 00031: val_loss did not improve from 0.71463
+Epoch 32/500
+47/47 - 1s - loss: 0.5473 - accuracy: 0.7840 - val_loss: 0.7061 - val_accuracy: 0.7274
+
+Epoch 00032: val_loss improved from 0.71463 to 0.70615, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 33/500
+47/47 - 1s - loss: 0.5407 - accuracy: 0.7889 - val_loss: 0.6928 - val_accuracy: 0.7308
+
+Epoch 00033: val_loss improved from 0.70615 to 0.69280, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 34/500
+47/47 - 1s - loss: 0.5137 - accuracy: 0.8024 - val_loss: 0.6970 - val_accuracy: 0.7321
+
+Epoch 00034: val_loss did not improve from 0.69280
+Epoch 35/500
+47/47 - 1s - loss: 0.5169 - accuracy: 0.7937 - val_loss: 0.6886 - val_accuracy: 0.7382
+
+Epoch 00035: val_loss improved from 0.69280 to 0.68859, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 36/500
+47/47 - 1s - loss: 0.5114 - accuracy: 0.8016 - val_loss: 0.6930 - val_accuracy: 0.7415
+
+Epoch 00036: val_loss did not improve from 0.68859
+Epoch 37/500
+47/47 - 1s - loss: 0.5031 - accuracy: 0.8068 - val_loss: 0.6960 - val_accuracy: 0.7358
+
+Epoch 00037: val_loss did not improve from 0.68859
+Epoch 38/500
+47/47 - 1s - loss: 0.4965 - accuracy: 0.8079 - val_loss: 0.7013 - val_accuracy: 0.7301
+
+Epoch 00038: val_loss did not improve from 0.68859
+Epoch 39/500
+47/47 - 1s - loss: 0.4940 - accuracy: 0.8082 - val_loss: 0.7070 - val_accuracy: 0.7378
+
+Epoch 00039: val_loss did not improve from 0.68859
+Epoch 40/500
+47/47 - 1s - loss: 0.4875 - accuracy: 0.8070 - val_loss: 0.6746 - val_accuracy: 0.7382
+
+Epoch 00040: val_loss improved from 0.68859 to 0.67462, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 41/500
+47/47 - 1s - loss: 0.4745 - accuracy: 0.8163 - val_loss: 0.6985 - val_accuracy: 0.7385
+
+Epoch 00041: val_loss did not improve from 0.67462
+Epoch 42/500
+47/47 - 1s - loss: 0.4804 - accuracy: 0.8165 - val_loss: 0.6867 - val_accuracy: 0.7462
+
+Epoch 00042: val_loss did not improve from 0.67462
+Epoch 43/500
+47/47 - 1s - loss: 0.4761 - accuracy: 0.8203 - val_loss: 0.6991 - val_accuracy: 0.7402
+
+Epoch 00043: val_loss did not improve from 0.67462
+Epoch 44/500
+47/47 - 1s - loss: 0.4799 - accuracy: 0.8184 - val_loss: 0.6965 - val_accuracy: 0.7388
+
+Epoch 00044: val_loss did not improve from 0.67462
+Epoch 45/500
+47/47 - 1s - loss: 0.4662 - accuracy: 0.8183 - val_loss: 0.6696 - val_accuracy: 0.7492
+
+Epoch 00045: val_loss improved from 0.67462 to 0.66962, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 46/500
+47/47 - 1s - loss: 0.4438 - accuracy: 0.8356 - val_loss: 0.6782 - val_accuracy: 0.7459
+
+Epoch 00046: val_loss did not improve from 0.66962
+Epoch 47/500
+47/47 - 1s - loss: 0.4448 - accuracy: 0.8319 - val_loss: 0.6892 - val_accuracy: 0.7452
+
+Epoch 00047: val_loss did not improve from 0.66962
+Epoch 48/500
+47/47 - 1s - loss: 0.4465 - accuracy: 0.8336 - val_loss: 0.6607 - val_accuracy: 0.7509
+
+Epoch 00048: val_loss improved from 0.66962 to 0.66069, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 49/500
+47/47 - 1s - loss: 0.4363 - accuracy: 0.8335 - val_loss: 0.6619 - val_accuracy: 0.7593
+
+Epoch 00049: val_loss did not improve from 0.66069
+Epoch 50/500
+47/47 - 1s - loss: 0.4259 - accuracy: 0.8396 - val_loss: 0.6597 - val_accuracy: 0.7529
+
+Epoch 00050: val_loss improved from 0.66069 to 0.65966, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 51/500
+47/47 - 1s - loss: 0.4263 - accuracy: 0.8415 - val_loss: 0.6855 - val_accuracy: 0.7546
+
+Epoch 00051: val_loss did not improve from 0.65966
+Epoch 52/500
+47/47 - 1s - loss: 0.4212 - accuracy: 0.8411 - val_loss: 0.6740 - val_accuracy: 0.7627
+
+Epoch 00052: val_loss did not improve from 0.65966
+Epoch 53/500
+47/47 - 1s - loss: 0.4146 - accuracy: 0.8450 - val_loss: 0.6713 - val_accuracy: 0.7492
+
+Epoch 00053: val_loss did not improve from 0.65966
+Epoch 54/500
+47/47 - 1s - loss: 0.4044 - accuracy: 0.8471 - val_loss: 0.6523 - val_accuracy: 0.7576
+
+Epoch 00054: val_loss improved from 0.65966 to 0.65228, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 55/500
+47/47 - 1s - loss: 0.4085 - accuracy: 0.8435 - val_loss: 0.6584 - val_accuracy: 0.7573
+
+Epoch 00055: val_loss did not improve from 0.65228
+Epoch 56/500
+47/47 - 1s - loss: 0.4083 - accuracy: 0.8454 - val_loss: 0.6625 - val_accuracy: 0.7529
+
+Epoch 00056: val_loss did not improve from 0.65228
+Epoch 57/500
+47/47 - 1s - loss: 0.3986 - accuracy: 0.8517 - val_loss: 0.6634 - val_accuracy: 0.7583
+
+Epoch 00057: val_loss did not improve from 0.65228
+Epoch 58/500
+47/47 - 1s - loss: 0.3841 - accuracy: 0.8534 - val_loss: 0.6489 - val_accuracy: 0.7664
+
+Epoch 00058: val_loss improved from 0.65228 to 0.64886, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 59/500
+47/47 - 1s - loss: 0.3870 - accuracy: 0.8558 - val_loss: 0.6614 - val_accuracy: 0.7634
+
+Epoch 00059: val_loss did not improve from 0.64886
+Epoch 60/500
+47/47 - 1s - loss: 0.3822 - accuracy: 0.8563 - val_loss: 0.6551 - val_accuracy: 0.7640
+
+Epoch 00060: val_loss did not improve from 0.64886
+Epoch 61/500
+47/47 - 1s - loss: 0.3878 - accuracy: 0.8541 - val_loss: 0.6466 - val_accuracy: 0.7607
+
+Epoch 00061: val_loss improved from 0.64886 to 0.64663, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 62/500
+47/47 - 1s - loss: 0.3816 - accuracy: 0.8553 - val_loss: 0.6624 - val_accuracy: 0.7724
+
+Epoch 00062: val_loss did not improve from 0.64663
+Epoch 63/500
+47/47 - 1s - loss: 0.3865 - accuracy: 0.8574 - val_loss: 0.6817 - val_accuracy: 0.7529
+
+Epoch 00063: val_loss did not improve from 0.64663
+Epoch 64/500
+47/47 - 1s - loss: 0.3732 - accuracy: 0.8576 - val_loss: 0.6429 - val_accuracy: 0.7650
+
+Epoch 00064: val_loss improved from 0.64663 to 0.64287, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 65/500
+47/47 - 1s - loss: 0.3573 - accuracy: 0.8710 - val_loss: 0.6628 - val_accuracy: 0.7637
+
+Epoch 00065: val_loss did not improve from 0.64287
+Epoch 66/500
+47/47 - 1s - loss: 0.3630 - accuracy: 0.8641 - val_loss: 0.6423 - val_accuracy: 0.7640
+
+Epoch 00066: val_loss improved from 0.64287 to 0.64227, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 67/500
+47/47 - 1s - loss: 0.3507 - accuracy: 0.8667 - val_loss: 0.6500 - val_accuracy: 0.7590
+
+Epoch 00067: val_loss did not improve from 0.64227
+Epoch 68/500
+47/47 - 1s - loss: 0.3606 - accuracy: 0.8654 - val_loss: 0.6535 - val_accuracy: 0.7644
+
+Epoch 00068: val_loss did not improve from 0.64227
+Epoch 69/500
+47/47 - 1s - loss: 0.3558 - accuracy: 0.8647 - val_loss: 0.6421 - val_accuracy: 0.7677
+
+Epoch 00069: val_loss improved from 0.64227 to 0.64211, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 70/500
+47/47 - 1s - loss: 0.3594 - accuracy: 0.8659 - val_loss: 0.6585 - val_accuracy: 0.7661
+
+Epoch 00070: val_loss did not improve from 0.64211
+Epoch 71/500
+47/47 - 1s - loss: 0.3396 - accuracy: 0.8751 - val_loss: 0.6408 - val_accuracy: 0.7724
+
+Epoch 00071: val_loss improved from 0.64211 to 0.64084, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 72/500
+47/47 - 1s - loss: 0.3433 - accuracy: 0.8730 - val_loss: 0.6516 - val_accuracy: 0.7647
+
+Epoch 00072: val_loss did not improve from 0.64084
+Epoch 73/500
+47/47 - 1s - loss: 0.3301 - accuracy: 0.8783 - val_loss: 0.6398 - val_accuracy: 0.7627
+
+Epoch 00073: val_loss improved from 0.64084 to 0.63984, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 74/500
+47/47 - 1s - loss: 0.3301 - accuracy: 0.8803 - val_loss: 0.6653 - val_accuracy: 0.7708
+
+Epoch 00074: val_loss did not improve from 0.63984
+Epoch 75/500
+47/47 - 1s - loss: 0.3438 - accuracy: 0.8739 - val_loss: 0.6773 - val_accuracy: 0.7580
+
+Epoch 00075: val_loss did not improve from 0.63984
+Epoch 76/500
+47/47 - 1s - loss: 0.3642 - accuracy: 0.8667 - val_loss: 0.6638 - val_accuracy: 0.7630
+
+Epoch 00076: val_loss did not improve from 0.63984
+Epoch 77/500
+47/47 - 1s - loss: 0.3354 - accuracy: 0.8773 - val_loss: 0.6555 - val_accuracy: 0.7708
+
+Epoch 00077: val_loss did not improve from 0.63984
+Epoch 78/500
+47/47 - 1s - loss: 0.3272 - accuracy: 0.8794 - val_loss: 0.6538 - val_accuracy: 0.7671
+
+Epoch 00078: val_loss did not improve from 0.63984
+Epoch 79/500
+47/47 - 1s - loss: 0.3335 - accuracy: 0.8772 - val_loss: 0.6400 - val_accuracy: 0.7765
+
+Epoch 00079: val_loss did not improve from 0.63984
+Epoch 80/500
+47/47 - 1s - loss: 0.3198 - accuracy: 0.8818 - val_loss: 0.6498 - val_accuracy: 0.7687
+
+Epoch 00080: val_loss did not improve from 0.63984
+Epoch 81/500
+47/47 - 1s - loss: 0.3237 - accuracy: 0.8816 - val_loss: 0.6433 - val_accuracy: 0.7714
+
+Epoch 00081: val_loss did not improve from 0.63984
+Epoch 82/500
+47/47 - 1s - loss: 0.3002 - accuracy: 0.8884 - val_loss: 0.6321 - val_accuracy: 0.7768
+
+Epoch 00082: val_loss improved from 0.63984 to 0.63207, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 83/500
+47/47 - 1s - loss: 0.3055 - accuracy: 0.8883 - val_loss: 0.6492 - val_accuracy: 0.7684
+
+Epoch 00083: val_loss did not improve from 0.63207
+Epoch 84/500
+47/47 - 1s - loss: 0.3058 - accuracy: 0.8891 - val_loss: 0.6397 - val_accuracy: 0.7731
+
+Epoch 00084: val_loss did not improve from 0.63207
+Epoch 85/500
+47/47 - 1s - loss: 0.3009 - accuracy: 0.8887 - val_loss: 0.6296 - val_accuracy: 0.7815
+
+Epoch 00085: val_loss improved from 0.63207 to 0.62961, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 86/500
+47/47 - 1s - loss: 0.2996 - accuracy: 0.8870 - val_loss: 0.6518 - val_accuracy: 0.7792
+
+Epoch 00086: val_loss did not improve from 0.62961
+Epoch 87/500
+47/47 - 1s - loss: 0.3073 - accuracy: 0.8867 - val_loss: 0.6487 - val_accuracy: 0.7734
+
+Epoch 00087: val_loss did not improve from 0.62961
+Epoch 88/500
+47/47 - 1s - loss: 0.3007 - accuracy: 0.8889 - val_loss: 0.6504 - val_accuracy: 0.7704
+
+Epoch 00088: val_loss did not improve from 0.62961
+Epoch 89/500
+47/47 - 1s - loss: 0.2970 - accuracy: 0.8930 - val_loss: 0.6666 - val_accuracy: 0.7644
+
+Epoch 00089: val_loss did not improve from 0.62961
+Epoch 90/500
+47/47 - 1s - loss: 0.2926 - accuracy: 0.8931 - val_loss: 0.6462 - val_accuracy: 0.7697
+
+Epoch 00090: val_loss did not improve from 0.62961
+Epoch 91/500
+47/47 - 1s - loss: 0.2968 - accuracy: 0.8941 - val_loss: 0.6412 - val_accuracy: 0.7775
+
+Epoch 00091: val_loss did not improve from 0.62961
+Epoch 92/500
+47/47 - 1s - loss: 0.2868 - accuracy: 0.8950 - val_loss: 0.6512 - val_accuracy: 0.7714
+
+Epoch 00092: val_loss did not improve from 0.62961
+Epoch 93/500
+47/47 - 1s - loss: 0.2784 - accuracy: 0.8978 - val_loss: 0.6417 - val_accuracy: 0.7687
+
+Epoch 00093: val_loss did not improve from 0.62961
+Epoch 94/500
+47/47 - 1s - loss: 0.2791 - accuracy: 0.8971 - val_loss: 0.6380 - val_accuracy: 0.7761
+
+Epoch 00094: val_loss did not improve from 0.62961
+Epoch 95/500
+47/47 - 1s - loss: 0.2763 - accuracy: 0.8979 - val_loss: 0.6498 - val_accuracy: 0.7758
+
+Epoch 00095: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+
+Epoch 00095: val_loss did not improve from 0.62961
+Epoch 96/500
+47/47 - 1s - loss: 0.2565 - accuracy: 0.9045 - val_loss: 0.6375 - val_accuracy: 0.7775
+
+Epoch 00096: val_loss did not improve from 0.62961
+Epoch 97/500
+47/47 - 1s - loss: 0.2519 - accuracy: 0.9097 - val_loss: 0.6358 - val_accuracy: 0.7782
+
+Epoch 00097: val_loss did not improve from 0.62961
+Epoch 98/500
+47/47 - 1s - loss: 0.2462 - accuracy: 0.9102 - val_loss: 0.6261 - val_accuracy: 0.7775
+
+Epoch 00098: val_loss improved from 0.62961 to 0.62612, saving model to ./Models/MLP_NET_TF4.hdf5
+Epoch 99/500
+47/47 - 1s - loss: 0.2440 - accuracy: 0.9111 - val_loss: 0.6267 - val_accuracy: 0.7802
+
+Epoch 00099: val_loss did not improve from 0.62612
+Epoch 100/500
+47/47 - 1s - loss: 0.2340 - accuracy: 0.9147 - val_loss: 0.6360 - val_accuracy: 0.7734
+
+Epoch 00100: val_loss did not improve from 0.62612
+Epoch 101/500
+47/47 - 1s - loss: 0.2328 - accuracy: 0.9160 - val_loss: 0.6293 - val_accuracy: 0.7798
+
+Epoch 00101: val_loss did not improve from 0.62612
+Epoch 102/500
+47/47 - 1s - loss: 0.2331 - accuracy: 0.9128 - val_loss: 0.6333 - val_accuracy: 0.7785
+
+Epoch 00102: val_loss did not improve from 0.62612
+Epoch 103/500
+47/47 - 1s - loss: 0.2236 - accuracy: 0.9187 - val_loss: 0.6321 - val_accuracy: 0.7782
+
+Epoch 00103: val_loss did not improve from 0.62612
+Epoch 104/500
+47/47 - 1s - loss: 0.2258 - accuracy: 0.9194 - val_loss: 0.6368 - val_accuracy: 0.7748
+
+Epoch 00104: val_loss did not improve from 0.62612
+Epoch 105/500
+47/47 - 1s - loss: 0.2285 - accuracy: 0.9175 - val_loss: 0.6324 - val_accuracy: 0.7812
+
+Epoch 00105: val_loss did not improve from 0.62612
+Epoch 106/500
+47/47 - 1s - loss: 0.2273 - accuracy: 0.9161 - val_loss: 0.6316 - val_accuracy: 0.7835
+
+Epoch 00106: val_loss did not improve from 0.62612
+Epoch 107/500
+47/47 - 1s - loss: 0.2192 - accuracy: 0.9199 - val_loss: 0.6497 - val_accuracy: 0.7775
+
+Epoch 00107: val_loss did not improve from 0.62612
+Epoch 108/500
+47/47 - 1s - loss: 0.2229 - accuracy: 0.9189 - val_loss: 0.6448 - val_accuracy: 0.7872
+
+Epoch 00108: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+
+Epoch 00108: val_loss did not improve from 0.62612
+Epoch 109/500
+47/47 - 1s - loss: 0.2105 - accuracy: 0.9246 - val_loss: 0.6348 - val_accuracy: 0.7822
+
+Epoch 00109: val_loss did not improve from 0.62612
+Epoch 110/500
+47/47 - 1s - loss: 0.2157 - accuracy: 0.9199 - val_loss: 0.6377 - val_accuracy: 0.7835
+
+Epoch 00110: val_loss did not improve from 0.62612
+Epoch 111/500
+47/47 - 1s - loss: 0.2025 - accuracy: 0.9245 - val_loss: 0.6351 - val_accuracy: 0.7782
+
+Epoch 00111: val_loss did not improve from 0.62612
+Epoch 112/500
+47/47 - 1s - loss: 0.1981 - accuracy: 0.9262 - val_loss: 0.6301 - val_accuracy: 0.7832
+
+Epoch 00112: val_loss did not improve from 0.62612
+Epoch 113/500
+47/47 - 1s - loss: 0.1970 - accuracy: 0.9296 - val_loss: 0.6347 - val_accuracy: 0.7822
+
+Epoch 00113: val_loss did not improve from 0.62612
+Epoch 114/500
+47/47 - 1s - loss: 0.1947 - accuracy: 0.9315 - val_loss: 0.6431 - val_accuracy: 0.7761
+
+Epoch 00114: val_loss did not improve from 0.62612
+Epoch 115/500
+47/47 - 1s - loss: 0.1987 - accuracy: 0.9314 - val_loss: 0.6375 - val_accuracy: 0.7798
+
+Epoch 00115: val_loss did not improve from 0.62612
+Epoch 116/500
+47/47 - 1s - loss: 0.1918 - accuracy: 0.9312 - val_loss: 0.6366 - val_accuracy: 0.7822
+
+Epoch 00116: val_loss did not improve from 0.62612
+Epoch 117/500
+47/47 - 1s - loss: 0.1954 - accuracy: 0.9278 - val_loss: 0.6327 - val_accuracy: 0.7832
+
+Epoch 00117: val_loss did not improve from 0.62612
+Epoch 118/500
+47/47 - 1s - loss: 0.1901 - accuracy: 0.9297 - val_loss: 0.6339 - val_accuracy: 0.7822
+
+Epoch 00118: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+
+Epoch 00118: val_loss did not improve from 0.62612
+Epoch 119/500
+47/47 - 1s - loss: 0.1860 - accuracy: 0.9354 - val_loss: 0.6354 - val_accuracy: 0.7818
+
+Epoch 00119: val_loss did not improve from 0.62612
+Epoch 120/500
+47/47 - 1s - loss: 0.1906 - accuracy: 0.9325 - val_loss: 0.6342 - val_accuracy: 0.7818
+
+Epoch 00120: val_loss did not improve from 0.62612
+Epoch 121/500
+47/47 - 1s - loss: 0.1949 - accuracy: 0.9320 - val_loss: 0.6387 - val_accuracy: 0.7805
+
+Epoch 00121: val_loss did not improve from 0.62612
+Epoch 122/500
+47/47 - 1s - loss: 0.1911 - accuracy: 0.9327 - val_loss: 0.6422 - val_accuracy: 0.7798
+
+Epoch 00122: val_loss did not improve from 0.62612
+Epoch 123/500
+47/47 - 1s - loss: 0.1848 - accuracy: 0.9333 - val_loss: 0.6414 - val_accuracy: 0.7835
+
+Epoch 00123: val_loss did not improve from 0.62612
+Epoch 124/500
+47/47 - 1s - loss: 0.1880 - accuracy: 0.9325 - val_loss: 0.6414 - val_accuracy: 0.7795
+
+Epoch 00124: val_loss did not improve from 0.62612
+Epoch 125/500
+47/47 - 1s - loss: 0.1901 - accuracy: 0.9326 - val_loss: 0.6411 - val_accuracy: 0.7862
+
+Epoch 00125: val_loss did not improve from 0.62612
+Epoch 126/500
+47/47 - 1s - loss: 0.1849 - accuracy: 0.9345 - val_loss: 0.6457 - val_accuracy: 0.7795
+
+Epoch 00126: val_loss did not improve from 0.62612
+Epoch 127/500
+47/47 - 1s - loss: 0.1831 - accuracy: 0.9334 - val_loss: 0.6422 - val_accuracy: 0.7829
+
+Epoch 00127: val_loss did not improve from 0.62612
+Epoch 128/500
+47/47 - 1s - loss: 0.1879 - accuracy: 0.9316 - val_loss: 0.6419 - val_accuracy: 0.7822
+
+Epoch 00128: ReduceLROnPlateau reducing learning rate to 6.25000029685907e-05.
+
+Epoch 00128: val_loss did not improve from 0.62612
+Epoch 129/500
+47/47 - 1s - loss: 0.1884 - accuracy: 0.9297 - val_loss: 0.6424 - val_accuracy: 0.7849
+
+Epoch 00129: val_loss did not improve from 0.62612
+Epoch 130/500
+47/47 - 1s - loss: 0.1883 - accuracy: 0.9315 - val_loss: 0.6416 - val_accuracy: 0.7829
+
+Epoch 00130: val_loss did not improve from 0.62612
+Epoch 131/500
+47/47 - 1s - loss: 0.1826 - accuracy: 0.9374 - val_loss: 0.6424 - val_accuracy: 0.7835
+
+Epoch 00131: val_loss did not improve from 0.62612
+Epoch 132/500
+47/47 - 1s - loss: 0.1841 - accuracy: 0.9351 - val_loss: 0.6445 - val_accuracy: 0.7829
+
+Epoch 00132: val_loss did not improve from 0.62612
+Epoch 133/500
+47/47 - 1s - loss: 0.1841 - accuracy: 0.9339 - val_loss: 0.6450 - val_accuracy: 0.7829
+
+Epoch 00133: val_loss did not improve from 0.62612
+Epoch 134/500
+47/47 - 1s - loss: 0.1763 - accuracy: 0.9360 - val_loss: 0.6423 - val_accuracy: 0.7818
+
+Epoch 00134: val_loss did not improve from 0.62612
+Epoch 135/500
+47/47 - 1s - loss: 0.1768 - accuracy: 0.9361 - val_loss: 0.6428 - val_accuracy: 0.7812
+
+Epoch 00135: val_loss did not improve from 0.62612
+Epoch 136/500
+47/47 - 1s - loss: 0.1860 - accuracy: 0.9324 - val_loss: 0.6412 - val_accuracy: 0.7842
+
+Epoch 00136: val_loss did not improve from 0.62612
+Epoch 137/500
+47/47 - 1s - loss: 0.1765 - accuracy: 0.9357 - val_loss: 0.6410 - val_accuracy: 0.7862
+
+Epoch 00137: val_loss did not improve from 0.62612
+Epoch 138/500
+47/47 - 1s - loss: 0.1774 - accuracy: 0.9383 - val_loss: 0.6392 - val_accuracy: 0.7855
+
+Epoch 00138: ReduceLROnPlateau reducing learning rate to 3.125000148429535e-05.
+
+Epoch 00138: val_loss did not improve from 0.62612
+Epoch 139/500
+47/47 - 1s - loss: 0.1776 - accuracy: 0.9383 - val_loss: 0.6384 - val_accuracy: 0.7862
+
+Epoch 00139: val_loss did not improve from 0.62612
+Epoch 140/500
+47/47 - 1s - loss: 0.1793 - accuracy: 0.9359 - val_loss: 0.6388 - val_accuracy: 0.7859
+
+Epoch 00140: val_loss did not improve from 0.62612
+Epoch 141/500
+47/47 - 1s - loss: 0.1756 - accuracy: 0.9368 - val_loss: 0.6390 - val_accuracy: 0.7839
+
+Epoch 00141: val_loss did not improve from 0.62612
+Epoch 142/500
+47/47 - 1s - loss: 0.1792 - accuracy: 0.9380 - val_loss: 0.6389 - val_accuracy: 0.7859
+
+Epoch 00142: val_loss did not improve from 0.62612
+Epoch 143/500
+47/47 - 1s - loss: 0.1747 - accuracy: 0.9374 - val_loss: 0.6405 - val_accuracy: 0.7869
+
+Epoch 00143: val_loss did not improve from 0.62612
+Epoch 144/500
+47/47 - 1s - loss: 0.1751 - accuracy: 0.9377 - val_loss: 0.6411 - val_accuracy: 0.7855
+
+Epoch 00144: val_loss did not improve from 0.62612
+Epoch 145/500
+47/47 - 1s - loss: 0.1777 - accuracy: 0.9362 - val_loss: 0.6409 - val_accuracy: 0.7842
+
+Epoch 00145: val_loss did not improve from 0.62612
+Epoch 146/500
+47/47 - 1s - loss: 0.1724 - accuracy: 0.9385 - val_loss: 0.6392 - val_accuracy: 0.7832
+
+Epoch 00146: val_loss did not improve from 0.62612
+Epoch 147/500
+47/47 - 1s - loss: 0.1744 - accuracy: 0.9387 - val_loss: 0.6396 - val_accuracy: 0.7849
+
+Epoch 00147: val_loss did not improve from 0.62612
+Epoch 148/500
+47/47 - 1s - loss: 0.1735 - accuracy: 0.9388 - val_loss: 0.6409 - val_accuracy: 0.7835
+
+Epoch 00148: ReduceLROnPlateau reducing learning rate to 1.5625000742147677e-05.
+Restoring model weights from the end of the best epoch.
+
+Epoch 00148: val_loss did not improve from 0.62612
+Epoch 00148: early stopping
+
+Last validation accuracy for every fold: [78.12, 78.46, 78.6, 77.95, 78.35]
+Training, validation and testing completed!
+
+Program runtime: 0:08:20
