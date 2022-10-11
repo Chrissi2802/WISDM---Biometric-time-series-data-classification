@@ -57,19 +57,19 @@ Models (neural networks):
 
 ## Achieved results
 The scores were calculated by Kaggle. The metric is the categorization accuracy (ACC). <br> 
-| Models             | Public leaderboard score    | Training time (hh:mm:ss)    |
-| ------------------ | --------------------------- | --------------------------- |
-| MLP_NET_V1         | 0.45856                     | 00:05:22                    |
-| CNN_NET_V1         | 0.51933                     | 00:21:17                    |
-| GRU_NET            | 0.00000                     | PyTorch GRU does not work   |
-| CNN_NET_V2         | 0.85635                     | 00:01:28                    |
-| LSTM_NET           | 0.83425                     | 00:16:16                    |
-| MLP_NET_TF         | 0.90055                     | 00:08:20                    |
-| CNN_NET_TF         | 0.87845                     | 00:06:18                    |
-| GRU_NET_TF         | 0.89502                     | 00:18:55                    |
-| LSTM_NET_TF        | 0.88950                     | 00:19:04                    |
-| GRU_NET_BIG_TF     | 0.95027                     | 00:22:47                    |
-| CONV_LSTM_NET_TF   | 0.93370                     | 00:35:53                    |
+| Models             | Public leaderboard score    | Training time (hh:mm:ss)    | Parameters of the model   |
+| ------------------ | --------------------------- | --------------------------- | ------------------------: |
+| MLP_NET_V1         | 0.45856                     | 00:05:22                    | 902                       |                   
+| CNN_NET_V1         | 0.51933                     | 00:21:17                    | 141,766                   |
+| GRU_NET            | 0.00000                     | PyTorch GRU does not work   | 0                         |
+| CNN_NET_V2         | 0.85635                     | 00:01:28                    | 134,134                   |
+| LSTM_NET           | 0.83425                     | 00:16:16                    | 529,926                   |
+| MLP_NET_TF         | 0.90055                     | 00:08:20                    | 112,262                   |
+| CNN_NET_TF         | 0.87845                     | 00:06:18                    | 1,641,030                 |
+| GRU_NET_TF         | 0.89502                     | 00:18:55                    | 4,175,238                 |
+| LSTM_NET_TF        | 0.88950                     | 00:19:04                    | 4,470,150                 |
+| GRU_NET_BIG_TF     | **0.95027**                 | 00:22:47                    | 10,621,830                |
+| CONV_LSTM_NET_TF   | 0.93370                     | 00:35:53                    | 14,721,926                |
 
 The two models GRU_NET_BIG_TF and CONV_LSTM_NET_TF were trained with an extended data set. For this purpose, three new features were added by means of feature engineering. The features are the Fast Fourier Transformation (FFT) of the individual signals. <br> 
 In addition, these two models were trained with data created with a sliding window of size 200. All other models were trained with size 100. <br> 
